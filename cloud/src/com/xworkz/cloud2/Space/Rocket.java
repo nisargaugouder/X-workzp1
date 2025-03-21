@@ -5,7 +5,7 @@ public class Rocket {
         if(space!=null){
             space.sp();
         }else{
-            System.out.println("is  null");
+            System.out.println("is really null");
         }
     }
 }
