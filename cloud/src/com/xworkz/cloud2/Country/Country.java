@@ -8,5 +8,4 @@ public class Country {
         PrimeMinister.State();
     }
 
-
 }
