@@ -19,7 +19,7 @@ public class Battery {
     public void Batdisplay(){
         System.out.println("Charge:"+this.charged);
         System.out.println("Percentage:"+this.percentage);
-        System.out.println("Voltage from dif class as variable:"+this.voltage);
+        System.out.println("Voltage  from dif class as variable:"+this.voltage);
         voltage.voltDis();
     }
 }
