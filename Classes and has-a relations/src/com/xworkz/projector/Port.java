@@ -1,19 +1,19 @@
 package com.xworkz.projector;
 
 public class Port {
-    private String name;
-    private int numberOfPorts;
-    private Port port;
+    private String name="Toca";
+    private final int numberOfPorts;
+    private PortType portType;
 
-    public Port(String name, int numberOfPorts) {
+    public Port(String name, int numberOfPorts,PortType portType) {
         this.name = name;
         this.numberOfPorts = numberOfPorts;
-
+        this.portType=portType;
     }
 
     public void displayPortDetails() {
         System.out.println("Port Name: " + this.name);
         System.out.println("Number of Ports: " + this.numberOfPorts);
-        port.displayPortDetails();
+        portType.displayPortTypeDetails();
     }
 }
