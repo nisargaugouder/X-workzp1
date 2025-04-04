@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.sales;
 
 public class Sales {
     public Sales() {
-        System.out.println("Running non-arg constructor Sales");
+        System.out.println("Sales --parent");
     }
-    public void generateRevenue() {
-        System.out.println("Sales help generate revenue for businesses");
+
+    public void revenue() {
+        System.out.println("Sales generate revenue --parent");
     }
-    public void involveMarketing() {
-        System.out.println("Sales involve marketing strategies");
+
+    public void marketing() {
+        System.out.println("Sales involve marketing --parent");
     }
-    public void requireCustomerEngagement() {
-        System.out.println("Sales require engaging with customers");
+
+    public void customer() {
+        System.out.println("Sales require customer engagement --parent");
     }
-    public void includeDiscounts() {
-        System.out.println("Sales often include discounts and offers");
+
+    public void discounts() {
+        System.out.println("Sales include discounts --parent");
     }
-    public void happenGlobally() {
-        System.out.println("Sales occur globally in different industries");
+
+    public void global() {
+        System.out.println("Sales happen globally --parent");
     }
 }

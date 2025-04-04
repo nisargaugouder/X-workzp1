@@ -5,19 +5,29 @@ import com.xworkz.inheritence.internal.frozenBottle.IceBottle;
 
 public class FrozenBottleRunner {
     public static void main(String[] args) {
-        FrozenBottle bottle = new IceBottle();
-        bottle.freezeWater();
-        bottle.keepCold();
-        bottle.useForCooling();
-        bottle.meltSlowly();
-        bottle.carryAnywhere();
+        FrozenBottle bottle = new FrozenBottle();
+        bottle.freeze();
+        bottle.cold();
+        bottle.cool();
+        bottle.melt();
+        bottle.carry();
 
         System.out.println("-----------------");
+
+        FrozenBottle bottle2 = new IceBottle();
+        bottle2.freeze();
+        bottle2.cold();
+        bottle2.cool();
+        bottle2.melt();
+        bottle2.carry();
+
+        System.out.println("-----------------");
+
         IceBottle iceBottle = new IceBottle();
-        iceBottle.freezeWater();
-        iceBottle.keepCold();
-        iceBottle.useForCooling();
-        iceBottle.meltSlowly();
-        iceBottle.carryAnywhere();
+        iceBottle.freeze();
+        iceBottle.cold();
+        iceBottle.cool();
+        iceBottle.melt();
+        iceBottle.carry();
     }
 }

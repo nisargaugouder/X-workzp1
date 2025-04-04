@@ -5,19 +5,27 @@ import com.xworkz.inheritence.internal.church.CatholicChurch;
 
 public class ChurchRunner {
     public static void main(String[] args) {
+        Church church1 = new Church();
+        church1.service();
+        church1.pray();
+        church1.candles();
+        church1.hymns();
+        church1.bible();
+
+        System.out.println("-----------------");
         Church church = new CatholicChurch();
-        church.attendService();
+        church.service();
         church.pray();
-        church.lightCandles();
-        church.singHymns();
-        church.readBible();
+        church.candles();
+        church.hymns();
+        church.bible();
 
         System.out.println("-----------------");
         CatholicChurch catholicChurch = new CatholicChurch();
-        catholicChurch.attendService();
+        catholicChurch.service();
         catholicChurch.pray();
-        catholicChurch.lightCandles();
-        catholicChurch.singHymns();
-        catholicChurch.readBible();
+        catholicChurch.candles();
+        catholicChurch.hymns();
+        catholicChurch.bible();
     }
 }

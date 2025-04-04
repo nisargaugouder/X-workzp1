@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.pizza;
 
 public class Pizza {
     public Pizza() {
-        System.out.println("Running non-arg constructor Pizza");
+        System.out.println("Pizza --parent");
     }
-    public void hasCrust() {
-        System.out.println("Pizza has a crust made of dough");
+
+    public void crust() {
+        System.out.println("Pizza has a crispy crust --parent");
     }
-    public void toppedWithSauce() {
-        System.out.println("Pizza is topped with tomato or white sauce");
+
+    public void sauce() {
+        System.out.println("Pizza is topped with sauce --parent");
     }
-    public void includesCheese() {
-        System.out.println("Pizza often has cheese as a key ingredient");
+
+    public void cheese() {
+        System.out.println("Pizza includes cheese --parent");
     }
-    public void availableInDifferentFlavors() {
-        System.out.println("Pizza comes in different flavors like Margherita, Pepperoni, and BBQ Chicken");
+
+    public void flavors() {
+        System.out.println("Pizza comes in different flavors --parent");
     }
-    public void cookedInOven() {
-        System.out.println("Pizza is baked in an oven for a crispy crust");
+
+    public void cook() {
+        System.out.println("Pizza is cooked in an oven --parent");
     }
 }

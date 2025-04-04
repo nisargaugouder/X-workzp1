@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.chips;
 
 public class Chips {
     public Chips() {
-        System.out.println("Running non-arg constructor Chips");
+        System.out.println("Running non-arg constructor Chips--parent");
     }
-    public void madeFromPotato() {
-        System.out.println("Chips are made from potatoes");
+
+    public void made() {
+        System.out.println("Chips made from potato--parent");
     }
-    public void crispyTexture() {
-        System.out.println("Chips have a crispy texture");
+
+    public void crispy() {
+        System.out.println("Chips are crispy--parent");
     }
-    public void availableInFlavors() {
-        System.out.println("Chips are available in different flavors");
+
+    public void flavors() {
+        System.out.println("Chips come in flavors--parent");
     }
-    public void packedForSale() {
-        System.out.println("Chips are packed in air-sealed packets");
+
+    public void packed() {
+        System.out.println("Chips are packed for sale--parent");
     }
-    public void commonlySnacked() {
-        System.out.println("Chips are a popular snack");
+
+    public void snack() {
+        System.out.println("Chips are a common snack--parent");
     }
 }

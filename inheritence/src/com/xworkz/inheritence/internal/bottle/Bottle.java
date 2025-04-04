@@ -1,22 +1,22 @@
 package com.xworkz.inheritence.internal.bottle;
 
 public class Bottle {
-    public Bottle(){
-        System.out.println("running non-arg const Bottle");
+    public Bottle() {
+        System.out.println("Running non-arg constructor Bottle--parent");
     }
-    public void fill(){
-        System.out.println("fill bottle");
+    public void fill() {
+        System.out.println("Bottle is filled with liquid--parent");
     }
-    public void water(){
-        System.out.println("water bottle");
+    public void storeWater() {
+        System.out.println("Bottle stores water--parent");
     }
-    public void milk(){
-        System.out.println("milk bottle");
+    public void storeMilk() {
+        System.out.println("Bottle stores milk--parent");
     }
-    public void glass(){
-        System.out.println("glass bottle");
+    public void madeOfGlass() {
+        System.out.println("Some bottles are made of glass--parent");
     }
-    public void frozen(){
-        System.out.println("frozen bottle");
+    public void frozen() {
+        System.out.println("Bottle can be frozen--parent");
     }
 }

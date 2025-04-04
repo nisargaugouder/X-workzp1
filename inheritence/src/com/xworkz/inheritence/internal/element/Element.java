@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.element;
 
 public class Element {
     public Element() {
-        System.out.println("Running non-arg constructor Element");
+        System.out.println("Element created --parent");
     }
+
     public void atomicNumber() {
-        System.out.println("Element has an atomic number");
+        System.out.println("Checking atomic number --parent");
     }
+
     public void symbol() {
-        System.out.println("Element has a chemical symbol");
+        System.out.println("Displaying symbol --parent");
     }
+
     public void state() {
-        System.out.println("Element exists in different states");
+        System.out.println("Checking state of matter --parent");
     }
+
     public void bonding() {
-        System.out.println("Element forms chemical bonds");
+        System.out.println("Understanding bonding properties --parent");
     }
+
     public void reactivity() {
-        System.out.println("Element has chemical reactivity");
+        System.out.println("Checking reactivity level --parent");
     }
 }

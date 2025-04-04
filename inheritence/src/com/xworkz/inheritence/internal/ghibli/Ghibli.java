@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.ghibli;
 
 public class Ghibli {
     public Ghibli() {
-        System.out.println("Running non-arg constructor Ghibli");
+        System.out.println("Ghibli --parent");
     }
-    public void createAnimation() {
-        System.out.println("Ghibli creates hand-drawn animated movies");
+
+    public void animate() {
+        System.out.println("Ghibli creates stunning animation --parent");
     }
-    public void tellStories() {
-        System.out.println("Ghibli movies tell captivating stories");
+
+    public void story() {
+        System.out.println("Ghibli tells deep stories --parent");
     }
-    public void inspireViewers() {
-        System.out.println("Ghibli movies inspire viewers worldwide");
+
+    public void inspire() {
+        System.out.println("Ghibli movies inspire viewers --parent");
     }
-    public void featureFantasy() {
-        System.out.println("Ghibli movies often feature fantasy elements");
+
+    public void fantasy() {
+        System.out.println("Ghibli features fantasy elements --parent");
     }
-    public void promoteNature() {
-        System.out.println("Ghibli movies promote a strong connection to nature");
+
+    public void nature() {
+        System.out.println("Ghibli promotes love for nature --parent");
     }
 }

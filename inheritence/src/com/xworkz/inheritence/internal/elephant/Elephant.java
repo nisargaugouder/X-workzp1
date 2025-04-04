@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.elephant;
 
 public class Elephant {
     public Elephant() {
-        System.out.println("Running non-arg constructor Elephant");
+        System.out.println("Elephant created --parent");
     }
+
     public void eat() {
-        System.out.println("Elephant eats plants and fruits");
+        System.out.println("Elephant eats grass and fruits --parent");
     }
+
     public void drinkWater() {
-        System.out.println("Elephant drinks large amounts of water");
+        System.out.println("Elephant drinks a lot of water --parent");
     }
+
     public void trumpet() {
-        System.out.println("Elephant makes a trumpet sound");
+        System.out.println("Elephant trumpets loudly --parent");
     }
+
     public void useTrunk() {
-        System.out.println("Elephant uses its trunk for various tasks");
+        System.out.println("Elephant uses its trunk for various tasks --parent");
     }
+
     public void walkSlowly() {
-        System.out.println("Elephant walks slowly but steadily");
+        System.out.println("Elephant walks slowly --parent");
     }
 }

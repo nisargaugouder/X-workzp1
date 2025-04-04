@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.scissors;
 
 public class Scissors {
     public Scissors() {
-        System.out.println("Running non-arg constructor Scissors");
+        System.out.println("Scissors --parent");
     }
-    public void usedForCutting() {
-        System.out.println("Scissors are used for cutting various materials");
+
+    public void cut() {
+        System.out.println("Scissors are used for cutting --parent");
     }
-    public void hasSharpBlades() {
-        System.out.println("Scissors have two sharp blades for cutting");
+
+    public void sharp() {
+        System.out.println("Scissors have sharp blades --parent");
     }
-    public void usedInHousehold() {
-        System.out.println("Scissors are commonly used in households for daily tasks");
+
+    public void home() {
+        System.out.println("Scissors are used in households --parent");
     }
-    public void comesInDifferentSizes() {
-        System.out.println("Scissors come in various sizes for different purposes");
+
+    public void size() {
+        System.out.println("Scissors come in different sizes --parent");
     }
-    public void requiresProperHandling() {
-        System.out.println("Scissors require careful handling to avoid injuries");
+
+    public void handle() {
+        System.out.println("Scissors require proper handling --parent");
     }
 }

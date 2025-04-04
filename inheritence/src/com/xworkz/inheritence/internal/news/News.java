@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.news;
 
 public class News {
     public News() {
-        System.out.println("Running non-arg constructor News");
+        System.out.println("News --parent");
     }
+
     public void report() {
-        System.out.println("News reports current events");
+        System.out.println("News reports daily updates --parent");
     }
+
     public void broadcast() {
-        System.out.println("News is broadcasted on TV and online platforms");
+        System.out.println("News is broadcast on TV and radio --parent");
     }
+
     public void publish() {
-        System.out.println("News is published in newspapers and websites");
+        System.out.println("News is published in newspapers --parent");
     }
-    public void coverPolitics() {
-        System.out.println("News covers political affairs");
+
+    public void politics() {
+        System.out.println("News covers political affairs --parent");
     }
-    public void coverSports() {
-        System.out.println("News provides updates on sports events");
+
+    public void sports() {
+        System.out.println("News covers sports events --parent");
     }
 }

@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.shoe;
 
 public class Shoe {
     public Shoe() {
-        System.out.println("Running non-arg constructor Shoe");
+        System.out.println("Shoe --parent");
     }
-    public void protectsFeet() {
-        System.out.println("Shoes protect feet from dirt and injuries");
+
+    public void protect() {
+        System.out.println("Shoes protect feet --parent");
     }
-    public void providesComfort() {
-        System.out.println("Shoes provide comfort while walking or running");
+
+    public void comfort() {
+        System.out.println("Shoes provide comfort --parent");
     }
-    public void comesInVariousStyles() {
-        System.out.println("Shoes come in different styles and designs");
+
+    public void style() {
+        System.out.println("Shoes come in various styles --parent");
     }
-    public void madeFromDifferentMaterials() {
-        System.out.println("Shoes are made from leather, rubber, or fabric");
+
+    public void material() {
+        System.out.println("Shoes are made from different materials --parent");
     }
-    public void availableInDifferentSizes() {
-        System.out.println("Shoes are available in various sizes for different people");
+
+    public void size() {
+        System.out.println("Shoes are available in different sizes --parent");
     }
 }

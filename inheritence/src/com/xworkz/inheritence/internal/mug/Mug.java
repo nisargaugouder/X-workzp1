@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.mug;
 
 public class Mug {
     public Mug() {
-        System.out.println("Running non-arg constructor Mug");
+        System.out.println("Mug --parent");
     }
-    public void usedForDrinking() {
-        System.out.println("Mugs are used for drinking beverages like tea or coffee");
+
+    public void drink() {
+        System.out.println("Mug is used for drinking --parent");
     }
-    public void madeOfCeramic() {
-        System.out.println("Mugs are commonly made of ceramic, glass, or metal");
+
+    public void material() {
+        System.out.println("Mug is made of ceramic --parent");
     }
-    public void hasHandle() {
-        System.out.println("Mugs usually have a handle for easy grip");
+
+    public void handle() {
+        System.out.println("Mug has a handle --parent");
     }
-    public void comesInVariousDesigns() {
-        System.out.println("Mugs come in various designs and colors");
+
+    public void design() {
+        System.out.println("Mug comes in various designs --parent");
     }
-    public void canHoldHotLiquids() {
-        System.out.println("Mugs can hold hot liquids without getting too hot to touch");
+
+    public void hot() {
+        System.out.println("Mug can hold hot liquids --parent");
     }
 }

@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.temple;
 
 public class Temple {
     public Temple() {
-        System.out.println("Running non-arg constructor Temple");
+        System.out.println("Temple --parent");
     }
+
     public void worship() {
-        System.out.println("People come to worship at the temple");
+        System.out.println("People come to worship --parent");
     }
+
     public void meditate() {
-        System.out.println("Meditating in the temple for peace");
+        System.out.println("Temple provides a peaceful place for meditation --parent");
     }
+
     public void lightLamp() {
-        System.out.println("Lighting lamps as part of the rituals");
+        System.out.println("Lamps are lit as a ritual --parent");
     }
+
     public void offerPrayers() {
-        System.out.println("Offering prayers to deities");
+        System.out.println("Prayers are offered to the deity --parent");
     }
+
     public void ringBell() {
-        System.out.println("Ringing the bell at the temple entrance");
+        System.out.println("Bell is rung during rituals --parent");
     }
 }

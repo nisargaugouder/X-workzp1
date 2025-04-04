@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.planet;
 
 public class Planet {
     public Planet() {
-        System.out.println("Running non-arg constructor Planet");
+        System.out.println("Planet --parent");
     }
-    public void orbitsSun() {
-        System.out.println("Planet orbits the sun");
+
+    public void orbit() {
+        System.out.println("Planet orbits the Sun --parent");
     }
-    public void hasGravity() {
-        System.out.println("Planet has gravity");
+
+    public void gravity() {
+        System.out.println("Planet has gravitational force --parent");
     }
-    public void hasAtmosphere() {
-        System.out.println("Planet has an atmosphere");
+
+    public void atmosphere() {
+        System.out.println("Planet has an atmosphere --parent");
     }
-    public void supportsLife() {
-        System.out.println("Some planets support life");
+
+    public void life() {
+        System.out.println("Some planets support life --parent");
     }
-    public void hasOceans() {
-        System.out.println("Some planets have oceans");
+
+    public void ocean() {
+        System.out.println("Some planets have oceans --parent");
     }
 }

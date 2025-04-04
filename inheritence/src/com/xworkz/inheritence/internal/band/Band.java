@@ -2,21 +2,21 @@ package com.xworkz.inheritence.internal.band;
 
 public class Band {
     public Band() {
-        System.out.println("Running non-arg constructor Band");
+        System.out.println("Running non-arg constructor Band--parent");
     }
-    public void usedForBinding() {
-        System.out.println("Bands are used for binding objects together");
+    public void bind() {
+        System.out.println("Band is used for binding--parent");
     }
-    public void madeOfElasticMaterial() {
-        System.out.println("Bands are made of elastic material for flexibility");
+    public void stretch() {
+        System.out.println("Band can stretch--parent");
     }
-    public void availableInDifferentSizes() {
-        System.out.println("Bands are available in different sizes and colors");
+    public void size() {
+        System.out.println("Band comes in different sizes--parent");
     }
-    public void stretchesEasily() {
-        System.out.println("Bands can stretch easily without breaking");
+    public void material() {
+        System.out.println("Band is made of elastic material--parent");
     }
-    public void usedForVariousPurposes() {
-        System.out.println("Bands are used in offices, homes, and industries");
+    public void use() {
+        System.out.println("Band has many uses--parent");
     }
 }

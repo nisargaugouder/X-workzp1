@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.vscode;
 
 public class VSCode {
     public VSCode() {
-        System.out.println("Running non-arg constructor VSCode");
+        System.out.println("VSCode --parent");
     }
-    public void provideEditor() {
-        System.out.println("VSCode provides a powerful code editor");
+
+    public void editor() {
+        System.out.println("VSCode provides a code editor --parent");
     }
-    public void supportExtensions() {
-        System.out.println("VSCode supports multiple extensions");
+
+    public void extensions() {
+        System.out.println("VSCode supports extensions --parent");
     }
-    public void enableDebugging() {
-        System.out.println("VSCode enables debugging for various programming languages");
+
+    public void debug() {
+        System.out.println("VSCode enables debugging --parent");
     }
-    public void integrateWithGit() {
-        System.out.println("VSCode integrates seamlessly with Git");
+
+    public void git() {
+        System.out.println("VSCode integrates with Git --parent");
     }
-    public void supportMultipleLanguages() {
-        System.out.println("VSCode supports multiple programming languages");
+
+    public void languages() {
+        System.out.println("VSCode supports multiple languages --parent");
     }
 }

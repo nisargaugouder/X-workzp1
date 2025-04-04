@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.frozenBottle;
 
 public class FrozenBottle {
     public FrozenBottle() {
-        System.out.println("Running non-arg constructor FrozenBottle");
+        System.out.println("FrozenBottle --parent");
     }
-    public void freezeWater() {
-        System.out.println("Frozen bottle contains ice-cold water");
+
+    public void freeze() {
+        System.out.println("Freezing water --parent");
     }
-    public void keepCold() {
-        System.out.println("Frozen bottle keeps drinks cold for long");
+
+    public void cold() {
+        System.out.println("Keeps water cold --parent");
     }
-    public void useForCooling() {
-        System.out.println("Frozen bottle can be used to cool other items");
+
+    public void cool() {
+        System.out.println("Used for cooling --parent");
     }
-    public void meltSlowly() {
-        System.out.println("Frozen bottle melts slowly over time");
+
+    public void melt() {
+        System.out.println("Melts slowly --parent");
     }
-    public void carryAnywhere() {
-        System.out.println("Frozen bottle is portable and useful in summers");
+
+    public void carry() {
+        System.out.println("Easy to carry --parent");
     }
 }

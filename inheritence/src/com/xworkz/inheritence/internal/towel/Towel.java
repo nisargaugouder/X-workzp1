@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.towel;
 
 public class Towel {
     public Towel() {
-        System.out.println("Running non-arg constructor Towel");
+        System.out.println("Towel --parent");
     }
-    public void absorbWater() {
-        System.out.println("Towel absorbs water after a bath");
+
+    public void absorb() {
+        System.out.println("Towel absorbs water --parent");
     }
-    public void madeOfCotton() {
-        System.out.println("Towel is made from soft cotton fabric");
+
+    public void material() {
+        System.out.println("Towel is made of cotton --parent");
     }
-    public void availableInSizes() {
-        System.out.println("Towels are available in different sizes");
+
+    public void size() {
+        System.out.println("Towel comes in different sizes --parent");
     }
-    public void usedInBathroom() {
-        System.out.println("Towels are commonly used in bathrooms");
+
+    public void use() {
+        System.out.println("Towel is used in bathrooms --parent");
     }
-    public void requiresWashing() {
-        System.out.println("Towels need regular washing for hygiene");
+
+    public void wash() {
+        System.out.println("Towel requires regular washing --parent");
     }
 }

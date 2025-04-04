@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.netflix;
 
 public class Netflix {
     public Netflix() {
-        System.out.println("Running non-arg constructor Netflix");
+        System.out.println("Netflix --parent");
     }
-    public void streamShows() {
-        System.out.println("Netflix streams TV shows and movies");
+
+    public void stream() {
+        System.out.println("Netflix allows streaming shows --parent");
     }
-    public void offerSubscription() {
-        System.out.println("Netflix offers subscription-based content");
+
+    public void subscribe() {
+        System.out.println("Netflix offers subscription plans --parent");
     }
-    public void supportMultipleDevices() {
-        System.out.println("Netflix can be accessed on multiple devices");
+
+    public void devices() {
+        System.out.println("Netflix supports multiple devices --parent");
     }
-    public void provideOriginalContent() {
-        System.out.println("Netflix produces original content");
+
+    public void content() {
+        System.out.println("Netflix provides original content --parent");
     }
-    public void allowOfflineViewing() {
-        System.out.println("Netflix allows downloading content for offline viewing");
+
+    public void offline() {
+        System.out.println("Netflix allows offline viewing --parent");
     }
 }

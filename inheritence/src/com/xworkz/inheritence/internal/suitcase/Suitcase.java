@@ -1,22 +1,27 @@
 package com.xworkz.inheritence.internal.suitcase;
 
 public class Suitcase {
-    public Suitcase(){
-        System.out.println("running non-arg const Suitcase");
+    public Suitcase() {
+        System.out.println("Suitcase --parent");
     }
-    public void open(){
-        System.out.println("open Suitcase");
+
+    public void open() {
+        System.out.println("Suitcase can be opened --parent");
     }
-    public void close(){
-        System.out.println("close Suitcase");
+
+    public void close() {
+        System.out.println("Suitcase can be closed --parent");
     }
-    public void small(){
-        System.out.println("small Suitcase");
+
+    public void color() {
+        System.out.println("Suitcase comes in different colors --parent");
     }
-    public void color(){
-        System.out.println("color Suitcase");
+
+    public void size() {
+        System.out.println("Suitcase is available in various sizes --parent");
     }
-    public void noOfZip(){
-        System.out.println("noOfZip Suitcase");
+
+    public void lock() {
+        System.out.println("Suitcase has a locking mechanism --parent");
     }
 }

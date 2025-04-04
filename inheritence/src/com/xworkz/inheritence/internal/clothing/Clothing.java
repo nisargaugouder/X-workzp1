@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.clothing;
 
 public class Clothing {
     public Clothing() {
-        System.out.println("Running non-arg constructor Clothing");
+        System.out.println("Running non-arg constructor Clothing--parent");
     }
+
     public void wear() {
-        System.out.println("Clothing is worn");
+        System.out.println("Clothing is worn--parent");
     }
-    public void material() {
-        System.out.println("Clothing is made of different materials");
+
+    public void fabric() {
+        System.out.println("Clothing has different fabrics--parent");
     }
-    public void size() {
-        System.out.println("Clothing has different sizes");
+
+    public void fit() {
+        System.out.println("Clothing comes in various sizes--parent");
     }
-    public void brand() {
-        System.out.println("Clothing has brands");
+
+    public void label() {
+        System.out.println("Clothing has different brands--parent");
     }
-    public void design() {
-        System.out.println("Clothing has designs");
+
+    public void style() {
+        System.out.println("Clothing has various designs--parent");
     }
 }

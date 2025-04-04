@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.milk;
 
 public class Milk {
     public Milk() {
-        System.out.println("Running non-arg constructor Milk");
+        System.out.println("Milk --parent");
     }
-    public void provideCalcium() {
-        System.out.println("Milk provides calcium for strong bones");
+
+    public void calcium() {
+        System.out.println("Milk provides calcium --parent");
     }
-    public void usedInCooking() {
-        System.out.println("Milk is widely used in cooking and baking");
+
+    public void cook() {
+        System.out.println("Milk is used in cooking --parent");
     }
-    public void boostImmunity() {
-        System.out.println("Milk helps in boosting immunity");
+
+    public void immunity() {
+        System.out.println("Milk boosts immunity --parent");
     }
-    public void consumedDaily() {
-        System.out.println("Milk is a part of daily diet for many people");
+
+    public void daily() {
+        System.out.println("Milk is consumed daily --parent");
     }
-    public void availableInDifferentTypes() {
-        System.out.println("Milk is available in different types like cow milk, almond milk, etc.");
+
+    public void types() {
+        System.out.println("Milk is available in different types --parent");
     }
 }

@@ -2,21 +2,21 @@ package com.xworkz.inheritence.internal.bangles;
 
 public class Bangles {
     public Bangles() {
-        System.out.println("Running non-arg constructor Bangles");
+        System.out.println("Running non-arg constructor Bangles--parent");
     }
-    public void wornOnWrist() {
-        System.out.println("Bangles are worn on the wrist as accessories");
+    public void wear() {
+        System.out.println("Bangles are worn on the wrist--parent");
     }
-    public void madeOfDifferentMaterials() {
-        System.out.println("Bangles can be made of glass, metal, plastic, or gold");
+    public void material() {
+        System.out.println("Bangles are made of different materials--parent");
     }
-    public void traditionalJewelry() {
-        System.out.println("Bangles are a traditional jewelry item in many cultures");
+    public void tradition() {
+        System.out.println("Bangles are part of traditional jewelry--parent");
     }
-    public void availableInVariousDesigns() {
-        System.out.println("Bangles come in various designs and patterns");
+    public void design() {
+        System.out.println("Bangles have different designs--parent");
     }
-    public void symbolizeMaritalStatus() {
-        System.out.println("In some cultures, bangles symbolize marital status");
+    public void symbol() {
+        System.out.println("Bangles symbolize culture and status--parent");
     }
 }

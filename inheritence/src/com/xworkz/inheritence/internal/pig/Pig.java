@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.pig;
 
 public class Pig {
     public Pig() {
-        System.out.println("Running non-arg constructor Pig");
+        System.out.println("Pig --parent");
     }
-    public void eatEverything() {
-        System.out.println("Pigs are omnivores and eat a variety of food");
+
+    public void eat() {
+        System.out.println("Pig eats everything --parent");
     }
-    public void liveInMud() {
-        System.out.println("Pigs enjoy rolling in mud to keep cool");
+
+    public void live() {
+        System.out.println("Pig lives in muddy areas --parent");
     }
-    public void haveStrongSenseOfSmell() {
-        System.out.println("Pigs have a strong sense of smell");
+
+    public void smell() {
+        System.out.println("Pig has a strong sense of smell --parent");
     }
-    public void socialAnimals() {
-        System.out.println("Pigs are social animals and live in groups");
+
+    public void social() {
+        System.out.println("Pig is a social animal --parent");
     }
-    public void intelligent() {
-        System.out.println("Pigs are highly intelligent animals");
+
+    public void smart() {
+        System.out.println("Pig is highly intelligent --parent");
     }
 }

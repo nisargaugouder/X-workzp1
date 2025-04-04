@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.puppy;
 
 public class Puppy {
     public Puppy() {
-        System.out.println("Running non-arg constructor Puppy");
+        System.out.println("Puppy --parent");
     }
+
     public void playful() {
-        System.out.println("Puppies are very playful and energetic");
+        System.out.println("Puppies are playful --parent");
     }
-    public void requiresTraining() {
-        System.out.println("Puppies require proper training and socialization");
+
+    public void training() {
+        System.out.println("Puppies require training --parent");
     }
-    public void needsCare() {
-        System.out.println("Puppies need proper care, food, and medical attention");
+
+    public void care() {
+        System.out.println("Puppies need care --parent");
     }
-    public void communicatesWithBarks() {
-        System.out.println("Puppies communicate using barks and body language");
+
+    public void bark() {
+        System.out.println("Puppies communicate with barks --parent");
     }
-    public void lovesToCuddle() {
-        System.out.println("Puppies love to cuddle and show affection");
+
+    public void cuddle() {
+        System.out.println("Puppies love to cuddle --parent");
     }
 }

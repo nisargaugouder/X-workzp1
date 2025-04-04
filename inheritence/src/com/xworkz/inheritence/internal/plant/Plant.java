@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.plant;
 
 public class Plant {
     public Plant() {
-        System.out.println("Running non-arg constructor Plant");
+        System.out.println("Plant --parent");
     }
+
     public void grow() {
-        System.out.println("Plant grows");
+        System.out.println("Plants grow using sunlight --parent");
     }
-    public void photosynthesis() {
-        System.out.println("Plant performs photosynthesis");
+
+    public void photo() {
+        System.out.println("Plants perform photosynthesis --parent");
     }
-    public void absorbWater() {
-        System.out.println("Plant absorbs water");
+
+    public void absorb() {
+        System.out.println("Plants absorb water from soil --parent");
     }
-    public void provideOxygen() {
-        System.out.println("Plant provides oxygen");
+
+    public void oxygen() {
+        System.out.println("Plants provide oxygen --parent");
     }
+
     public void reproduce() {
-        System.out.println("Plant reproduces");
+        System.out.println("Plants reproduce through seeds --parent");
     }
 }

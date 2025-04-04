@@ -5,19 +5,29 @@ import com.xworkz.inheritence.internal.cover.BookCover;
 
 public class CoverRunner {
     public static void main(String[] args) {
+        Cover cover1 = new Cover();
+        cover1.protect();
+        cover1.design();
+        cover1.grip();
+        cover1.waterproof();
+        cover1.enhance();
+
+        System.out.println("-----------");
+
         Cover cover = new BookCover();
         cover.protect();
         cover.design();
-        cover.provideGrip();
+        cover.grip();
         cover.waterproof();
-        cover.enhanceLook();
+        cover.enhance();
 
-        System.out.println("-----------------");
+        System.out.println("-----------");
+
         BookCover bookCover = new BookCover();
         bookCover.protect();
         bookCover.design();
-        bookCover.provideGrip();
+        bookCover.grip();
         bookCover.waterproof();
-        bookCover.enhanceLook();
+        bookCover.enhance();
     }
 }

@@ -5,19 +5,29 @@ import com.xworkz.inheritence.internal.sweet.GulabJamun;
 
 public class SweetRunner {
     public static void main(String[] args) {
-        Sweet sweet = new GulabJamun();
+        Sweet sweet = new Sweet();
         sweet.taste();
-        sweet.madeWithSugar();
-        sweet.serveInFestivals();
+        sweet.sugar();
+        sweet.festival();
         sweet.store();
-        sweet.giftToOthers();
+        sweet.gift();
 
-        System.out.println("-----------------");
+        System.out.println("-----------");
+
+        Sweet sweet2 = new GulabJamun();
+        sweet2.taste();
+        sweet2.sugar();
+        sweet2.festival();
+        sweet2.store();
+        sweet2.gift();
+
+        System.out.println("-----------");
+
         GulabJamun gulabJamun = new GulabJamun();
         gulabJamun.taste();
-        gulabJamun.madeWithSugar();
-        gulabJamun.serveInFestivals();
+        gulabJamun.sugar();
+        gulabJamun.festival();
         gulabJamun.store();
-        gulabJamun.giftToOthers();
+        gulabJamun.gift();
     }
 }

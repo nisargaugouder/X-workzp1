@@ -5,19 +5,29 @@ import com.xworkz.inheritence.internal.rose.RedRose;
 
 public class RoseRunner {
     public static void main(String[] args) {
-        Rose rose = new RedRose();
-        rose.hasFragrance();
-        rose.comesInDifferentColors();
-        rose.usedForDecoration();
-        rose.hasThorns();
-        rose.symbolizesLove();
+        Rose rose = new Rose();
+        rose.fragrance();
+        rose.colors();
+        rose.decorate();
+        rose.thorns();
+        rose.love();
 
-        System.out.println("-----------------");
+        System.out.println("-----------");
+
+        Rose rose2 = new RedRose();
+        rose2.fragrance();
+        rose2.colors();
+        rose2.decorate();
+        rose2.thorns();
+        rose2.love();
+
+        System.out.println("-----------");
+
         RedRose redRose = new RedRose();
-        redRose.hasFragrance();
-        redRose.comesInDifferentColors();
-        redRose.usedForDecoration();
-        redRose.hasThorns();
-        redRose.symbolizesLove();
+        redRose.fragrance();
+        redRose.colors();
+        redRose.decorate();
+        redRose.thorns();
+        redRose.love();
     }
 }

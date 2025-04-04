@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.sweet;
 
 public class Sweet {
     public Sweet() {
-        System.out.println("Running non-arg constructor Sweet");
+        System.out.println("Sweet --parent");
     }
+
     public void taste() {
-        System.out.println("Sweet is delicious to eat");
+        System.out.println("Sweet tastes delicious --parent");
     }
-    public void madeWithSugar() {
-        System.out.println("Sweets are often made with sugar");
+
+    public void sugar() {
+        System.out.println("Sweet is made with sugar --parent");
     }
-    public void serveInFestivals() {
-        System.out.println("Sweets are served during festivals");
+
+    public void festival() {
+        System.out.println("Sweet is served in festivals --parent");
     }
+
     public void store() {
-        System.out.println("Sweets can be stored for a few days");
+        System.out.println("Sweet can be stored for days --parent");
     }
-    public void giftToOthers() {
-        System.out.println("Sweets are commonly given as gifts");
+
+    public void gift() {
+        System.out.println("Sweet is gifted on special occasions --parent");
     }
 }

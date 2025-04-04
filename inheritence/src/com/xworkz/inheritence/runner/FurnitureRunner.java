@@ -5,12 +5,21 @@ import com.xworkz.inheritence.internal.furniture.Chair;
 
 public class FurnitureRunner {
     public static void main(String[] args) {
-        Furniture furniture = new Chair();
+        Furniture furniture = new Furniture();
         furniture.support();
         furniture.material();
         furniture.weight();
         furniture.move();
         furniture.design();
+
+        System.out.println("-----------");
+
+        Furniture furniture2 = new Chair();
+        furniture2.support();
+        furniture2.material();
+        furniture2.weight();
+        furniture2.move();
+        furniture2.design();
 
         System.out.println("-----------");
 

@@ -5,19 +5,29 @@ import com.xworkz.inheritence.internal.pig.WildPig;
 
 public class PigRunner {
     public static void main(String[] args) {
-        Pig pig = new WildPig();
-        pig.eatEverything();
-        pig.liveInMud();
-        pig.haveStrongSenseOfSmell();
-        pig.socialAnimals();
-        pig.intelligent();
+        Pig pig = new Pig();
+        pig.eat();
+        pig.live();
+        pig.smell();
+        pig.social();
+        pig.smart();
 
-        System.out.println("-----------------");
+        System.out.println("-----------");
+
+        Pig pig2 = new WildPig();
+        pig2.eat();
+        pig2.live();
+        pig2.smell();
+        pig2.social();
+        pig2.smart();
+
+        System.out.println("-----------");
+
         WildPig wildPig = new WildPig();
-        wildPig.eatEverything();
-        wildPig.liveInMud();
-        wildPig.haveStrongSenseOfSmell();
-        wildPig.socialAnimals();
-        wildPig.intelligent();
+        wildPig.eat();
+        wildPig.live();
+        wildPig.smell();
+        wildPig.social();
+        wildPig.smart();
     }
 }

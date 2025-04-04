@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.swim;
 
 public class Swim {
     public Swim() {
-        System.out.println("Running non-arg constructor Swim");
+        System.out.println("Swim --parent");
     }
-    public void improvesHealth() {
-        System.out.println("Swimming improves cardiovascular health");
+
+    public void health() {
+        System.out.println("Swimming improves health --parent");
     }
-    public void requiresWater() {
-        System.out.println("Swimming requires a pool, river, or sea");
+
+    public void water() {
+        System.out.println("Swimming requires water --parent");
     }
-    public void isFullBodyExercise() {
-        System.out.println("Swimming engages all muscle groups");
+
+    public void exercise() {
+        System.out.println("Swimming is a full-body exercise --parent");
     }
-    public void isPopularSport() {
-        System.out.println("Swimming is an Olympic sport");
+
+    public void sport() {
+        System.out.println("Swimming is a popular sport --parent");
     }
-    public void hasDifferentStyles() {
-        System.out.println("Swimming has different styles like freestyle, backstroke, and butterfly");
+
+    public void styles() {
+        System.out.println("Swimming has different styles --parent");
     }
 }

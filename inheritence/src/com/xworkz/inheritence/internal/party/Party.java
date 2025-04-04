@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.party;
 
 public class Party {
     public Party() {
-        System.out.println("Running non-arg constructor Party");
+        System.out.println("Party --parent");
     }
-    public void invitePeople() {
-        System.out.println("A party involves inviting friends and family");
+
+    public void invite() {
+        System.out.println("Party invites people --parent");
     }
-    public void haveFood() {
-        System.out.println("Parties include delicious food for guests");
+
+    public void food() {
+        System.out.println("Party serves delicious food --parent");
     }
-    public void playMusic() {
-        System.out.println("Music is played to entertain guests");
+
+    public void music() {
+        System.out.println("Party plays music for enjoyment --parent");
     }
+
     public void dance() {
-        System.out.println("People dance and enjoy at the party");
+        System.out.println("People dance at the party --parent");
     }
-    public void decorateVenue() {
-        System.out.println("Parties involve venue decoration");
+
+    public void decorate() {
+        System.out.println("Party venue is decorated beautifully --parent");
     }
 }

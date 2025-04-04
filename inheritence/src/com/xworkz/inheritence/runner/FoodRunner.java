@@ -9,16 +9,15 @@ public class FoodRunner {
         food.eat();
         food.taste();
         food.cook();
-        food.healthy();
-        food.spicy();
+        food.health();
+        food.spice();
 
         System.out.println("--------------");
-        Burger burger=new Burger();
+        Burger burger = new Burger();
         burger.eat();
         burger.taste();
         burger.cook();
-        burger.healthy();
-        burger.spicy();
-
+        burger.health();
+        burger.spice();
     }
 }

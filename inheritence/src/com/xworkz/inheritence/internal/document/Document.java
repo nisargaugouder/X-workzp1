@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.document;
 
 public class Document {
     public Document() {
-        System.out.println("Running non-arg constructor Document");
+        System.out.println("Running non-arg constructor Document--parent");
     }
-    public void storeData() {
-        System.out.println("Documents store important data");
+
+    public void store() {
+        System.out.println("Document stores data--parent");
     }
-    public void canBeEdited() {
-        System.out.println("Documents can be edited and updated");
+
+    public void edit() {
+        System.out.println("Document can be edited--parent");
     }
-    public void canBePrinted() {
-        System.out.println("Documents can be printed for official use");
+
+    public void print() {
+        System.out.println("Document can be printed--parent");
     }
-    public void supportMultipleFormats() {
-        System.out.println("Documents support multiple formats like DOCX, PDF, TXT");
+
+    public void format() {
+        System.out.println("Document supports multiple formats--parent");
     }
-    public void shareInformation() {
-        System.out.println("Documents are used to share information efficiently");
+
+    public void share() {
+        System.out.println("Document can be shared--parent");
     }
 }

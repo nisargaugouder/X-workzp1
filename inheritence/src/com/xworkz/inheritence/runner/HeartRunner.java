@@ -5,19 +5,29 @@ import com.xworkz.inheritence.internal.heart.HealthyHeart;
 
 public class HeartRunner {
     public static void main(String[] args) {
-        Heart heart = new HealthyHeart();
-        heart.pumpsBlood();
-        heart.beatsContinuously();
-        heart.suppliesOxygen();
-        heart.removesWaste();
-        heart.worksInCirculatorySystem();
+        Heart heart = new Heart();
+        heart.pump();
+        heart.beat();
+        heart.oxygen();
+        heart.waste();
+        heart.circulate();
 
-        System.out.println("-----------------");
+        System.out.println("-----------");
+
+        Heart heart2 = new HealthyHeart();
+        heart2.pump();
+        heart2.beat();
+        heart2.oxygen();
+        heart2.waste();
+        heart2.circulate();
+
+        System.out.println("-----------");
+
         HealthyHeart healthyHeart = new HealthyHeart();
-        healthyHeart.pumpsBlood();
-        healthyHeart.beatsContinuously();
-        healthyHeart.suppliesOxygen();
-        healthyHeart.removesWaste();
-        healthyHeart.worksInCirculatorySystem();
+        healthyHeart.pump();
+        healthyHeart.beat();
+        healthyHeart.oxygen();
+        healthyHeart.waste();
+        healthyHeart.circulate();
     }
 }

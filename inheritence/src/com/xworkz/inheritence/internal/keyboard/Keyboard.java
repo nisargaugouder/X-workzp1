@@ -2,18 +2,26 @@ package com.xworkz.inheritence.internal.keyboard;
 
 public class Keyboard {
     public Keyboard() {
-        System.out.println("Running non-arg constructor Keyboard");
+        System.out.println("Keyboard --parent");
     }
+
     public void type() {
-        System.out.println("Keyboard is typing");
+        System.out.println("Typing on keyboard --parent");
     }
+
     public void connect() {
-        System.out.println("Keyboard is connecting");
+        System.out.println("Connecting keyboard --parent");
     }
-    public void pressKey() {
-        System.out.println("Key is pressed");
+
+    public void press() {
+        System.out.println("Pressing key --parent");
     }
+
     public void backlight() {
-        System.out.println("Keyboard may have backlight");
+        System.out.println("Backlight feature --parent");
+    }
+
+    public void wireless() {
+        System.out.println("Wireless support --parent");
     }
 }

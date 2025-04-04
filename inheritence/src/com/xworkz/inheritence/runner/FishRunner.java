@@ -5,7 +5,7 @@ import com.xworkz.inheritence.internal.fish.GoldFish;
 
 public class FishRunner {
     public static void main(String[] args) {
-        Fish fish = new GoldFish();
+        Fish fish = new Fish();
         fish.livesInWater();
         fish.breathesThroughGills();
         fish.swimsUsingFins();
@@ -13,6 +13,16 @@ public class FishRunner {
         fish.laysEggs();
 
         System.out.println("-----------------");
+
+        Fish goldFishRef = new GoldFish();
+        goldFishRef.livesInWater();
+        goldFishRef.breathesThroughGills();
+        goldFishRef.swimsUsingFins();
+        goldFishRef.comesInDifferentSpecies();
+        goldFishRef.laysEggs();
+
+        System.out.println("-----------------");
+
         GoldFish goldFish = new GoldFish();
         goldFish.livesInWater();
         goldFish.breathesThroughGills();

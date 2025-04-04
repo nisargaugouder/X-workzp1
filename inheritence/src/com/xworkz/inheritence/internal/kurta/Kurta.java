@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.kurta;
 
 public class Kurta {
     public Kurta() {
-        System.out.println("Running non-arg constructor Kurta");
+        System.out.println("Kurta --parent");
     }
-    public void traditionalWear() {
-        System.out.println("Kurta is a traditional Indian wear");
+
+    public void traditional() {
+        System.out.println("Kurta is traditional --parent");
     }
-    public void comfortable() {
-        System.out.println("Kurta is comfortable to wear");
+
+    public void comfort() {
+        System.out.println("Kurta is comfortable --parent");
     }
-    public void wornOnFestivals() {
-        System.out.println("Kurta is commonly worn on festivals and special occasions");
+
+    public void festivalWear() {
+        System.out.println("Kurta is worn at festivals --parent");
     }
-    public void comesInVariousDesigns() {
-        System.out.println("Kurta is available in different designs and patterns");
+
+    public void design() {
+        System.out.println("Kurta comes in various designs --parent");
     }
-    public void pairedWithPajama() {
-        System.out.println("Kurta is often paired with pajama or jeans");
+
+    public void pairWithPajama() {
+        System.out.println("Kurta is paired with a pajama --parent");
     }
 }

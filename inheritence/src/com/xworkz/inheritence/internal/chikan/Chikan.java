@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.chikan;
 
 public class Chikan {
     public Chikan() {
-        System.out.println("Running non-arg constructor Chikan");
+        System.out.println("Running non-arg constructor Chikan--parent");
     }
-    public void traditionalArt() {
-        System.out.println("Chikan embroidery is a traditional Indian craft");
+
+    public void art() {
+        System.out.println("Chikan is a traditional art--parent");
     }
-    public void handcrafted() {
-        System.out.println("Chikan embroidery is mostly handcrafted");
+
+    public void handMade() {
+        System.out.println("Chikan is handcrafted--parent");
     }
-    public void originatedInLucknow() {
-        System.out.println("Chikan embroidery originated in Lucknow, India");
+
+    public void origin() {
+        System.out.println("Chikan originated in Lucknow--parent");
     }
-    public void delicateDesigns() {
-        System.out.println("Chikan embroidery features delicate and intricate patterns");
+
+    public void design() {
+        System.out.println("Chikan has delicate designs--parent");
     }
-    public void usedOnFabrics() {
-        System.out.println("Chikan embroidery is used on fabrics like cotton, silk, and muslin");
+
+    public void fabric() {
+        System.out.println("Chikan is used on fabrics--parent");
     }
 }

@@ -5,19 +5,29 @@ import com.xworkz.inheritence.internal.shoe.SportsShoe;
 
 public class ShoeRunner {
     public static void main(String[] args) {
-        Shoe shoe = new SportsShoe();
-        shoe.protectsFeet();
-        shoe.providesComfort();
-        shoe.comesInVariousStyles();
-        shoe.madeFromDifferentMaterials();
-        shoe.availableInDifferentSizes();
+        Shoe shoe = new Shoe();
+        shoe.protect();
+        shoe.comfort();
+        shoe.style();
+        shoe.material();
+        shoe.size();
 
-        System.out.println("-----------------");
+        System.out.println("-----------");
+
+        Shoe shoe2 = new SportsShoe();
+        shoe2.protect();
+        shoe2.comfort();
+        shoe2.style();
+        shoe2.material();
+        shoe2.size();
+
+        System.out.println("-----------");
+
         SportsShoe sportsShoe = new SportsShoe();
-        sportsShoe.protectsFeet();
-        sportsShoe.providesComfort();
-        sportsShoe.comesInVariousStyles();
-        sportsShoe.madeFromDifferentMaterials();
-        sportsShoe.availableInDifferentSizes();
+        sportsShoe.protect();
+        sportsShoe.comfort();
+        sportsShoe.style();
+        sportsShoe.material();
+        sportsShoe.size();
     }
 }

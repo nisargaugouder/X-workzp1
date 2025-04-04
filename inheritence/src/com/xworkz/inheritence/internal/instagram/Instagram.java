@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.instagram;
 
 public class Instagram {
     public Instagram() {
-        System.out.println("Running non-arg constructor Instagram");
+        System.out.println("Instagram --parent");
     }
-    public void postPhoto() {
-        System.out.println("Instagram allows posting photos");
+
+    public void post() {
+        System.out.println("Posting a photo --parent");
     }
-    public void sendMessage() {
-        System.out.println("Instagram allows sending messages");
+
+    public void message() {
+        System.out.println("Sending a message --parent");
     }
-    public void followUsers() {
-        System.out.println("Instagram allows following users");
+
+    public void follow() {
+        System.out.println("Following users --parent");
     }
-    public void viewStories() {
-        System.out.println("Instagram allows viewing stories");
+
+    public void story() {
+        System.out.println("Viewing stories --parent");
     }
-    public void likePosts() {
-        System.out.println("Instagram allows liking posts");
+
+    public void likes() {
+        System.out.println("Liking posts --parent");
     }
 }

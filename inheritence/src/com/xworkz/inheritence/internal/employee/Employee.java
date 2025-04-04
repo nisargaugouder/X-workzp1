@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.employee;
 
 public class Employee {
     public Employee() {
-        System.out.println("Running non-arg constructor Employee");
+        System.out.println("Employee created --parent");
     }
+
     public void work() {
-        System.out.println("Employee is working");
+        System.out.println("Employee performs tasks --parent");
     }
+
     public void salary() {
-        System.out.println("Employee gets salary");
+        System.out.println("Employee receives salary --parent");
     }
+
     public void benefits() {
-        System.out.println("Employee gets benefits");
+        System.out.println("Employee gets benefits --parent");
     }
+
     public void experience() {
-        System.out.println("Employee gains experience");
+        System.out.println("Employee gains experience --parent");
     }
+
     public void department() {
-        System.out.println("Employee belongs to a department");
+        System.out.println("Employee works in a department --parent");
     }
 }

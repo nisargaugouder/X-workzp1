@@ -2,21 +2,21 @@ package com.xworkz.inheritence.internal.bike;
 
 public class Bike {
     public Bike() {
-        System.out.println("Running non-arg constructor Bike");
+        System.out.println("Running non-arg constructor Bike--parent");
     }
-    public void usedForTransportation() {
-        System.out.println("Bikes are used for personal transportation");
+    public void transport() {
+        System.out.println("Bike is used for transportation--parent");
     }
-    public void hasTwoWheels() {
-        System.out.println("Bikes typically have two wheels");
+    public void wheels() {
+        System.out.println("Bike has two wheels--parent");
     }
-    public void runsOnFuel() {
-        System.out.println("Most bikes run on petrol or electric power");
+    public void fuel() {
+        System.out.println("Bike runs on fuel--parent");
     }
-    public void requiresHelmet() {
-        System.out.println("Riding a bike requires wearing a helmet for safety");
+    public void safety() {
+        System.out.println("Bike requires a helmet--parent");
     }
-    public void comesInDifferentModels() {
-        System.out.println("Bikes come in different models and engine capacities");
+    public void model() {
+        System.out.println("Bike comes in different models--parent");
     }
 }

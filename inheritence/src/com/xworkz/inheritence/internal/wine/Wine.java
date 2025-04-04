@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.wine;
 
 public class Wine {
     public Wine() {
-        System.out.println("Running non-arg constructor Wine");
+        System.out.println("Wine --parent");
     }
-    public void madeFromGrapes() {
-        System.out.println("Wine is made from fermented grapes");
+
+    public void grapes() {
+        System.out.println("Wine is made from grapes --parent");
     }
-    public void containsAlcohol() {
-        System.out.println("Wine contains alcohol in varying amounts");
+
+    public void alcohol() {
+        System.out.println("Wine contains alcohol --parent");
     }
-    public void improvesWithAge() {
-        System.out.println("Wine improves in taste as it ages");
+
+    public void aging() {
+        System.out.println("Wine improves with age --parent");
     }
-    public void servedInGlasses() {
-        System.out.println("Wine is served in special glasses");
+
+    public void serve() {
+        System.out.println("Wine is served in glasses --parent");
     }
-    public void usedInCooking() {
-        System.out.println("Wine is sometimes used in cooking gourmet dishes");
+
+    public void cooking() {
+        System.out.println("Wine is used in cooking --parent");
     }
 }

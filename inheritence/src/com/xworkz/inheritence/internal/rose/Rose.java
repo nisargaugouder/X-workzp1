@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.rose;
 
 public class Rose {
     public Rose() {
-        System.out.println("Running non-arg constructor Rose");
+        System.out.println("Rose --parent");
     }
-    public void hasFragrance() {
-        System.out.println("Rose has a pleasant fragrance");
+
+    public void fragrance() {
+        System.out.println("Rose has fragrance --parent");
     }
-    public void comesInDifferentColors() {
-        System.out.println("Roses come in various colors like red, pink, and white");
+
+    public void colors() {
+        System.out.println("Rose comes in different colors --parent");
     }
-    public void usedForDecoration() {
-        System.out.println("Roses are commonly used for decoration and gifting");
+
+    public void decorate() {
+        System.out.println("Rose is used for decoration --parent");
     }
-    public void hasThorns() {
-        System.out.println("Roses have thorns on their stems");
+
+    public void thorns() {
+        System.out.println("Rose has thorns --parent");
     }
-    public void symbolizesLove() {
-        System.out.println("Rose is often a symbol of love and affection");
+
+    public void love() {
+        System.out.println("Rose symbolizes love --parent");
     }
 }

@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.city;
 
 public class City {
     public City() {
-        System.out.println("Running non-arg constructor City");
+        System.out.println("Running non-arg constructor City--parent");
     }
-    public void population() {
-        System.out.println("City has a population");
+
+    public void people() {
+        System.out.println("City has a large population--parent");
     }
-    public void infrastructure() {
-        System.out.println("City has infrastructure");
+
+    public void roads() {
+        System.out.println("City has developed infrastructure--parent");
     }
-    public void tourism() {
-        System.out.println("City attracts tourists");
+
+    public void visit() {
+        System.out.println("City attracts tourists--parent");
     }
-    public void culture() {
-        System.out.println("City has a diverse culture");
+
+    public void life() {
+        System.out.println("City has diverse culture--parent");
     }
-    public void economy() {
-        System.out.println("City has an economy");
+
+    public void business() {
+        System.out.println("City boosts the economy--parent");
     }
 }

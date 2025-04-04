@@ -2,19 +2,26 @@ package com.xworkz.inheritence.internal.fruit;
 
 public class Fruit {
     public Fruit() {
-        System.out.println("Running non-arg constructor of Fruit");
-    }
-    public void taste() {
-        System.out.println("Fruit has a taste");
-    }
-    public void color() {
-        System.out.println("Fruit has a color");
-    }
-    public void nutrients() {
-        System.out.println("Fruit contains nutrients");
-    }
-    public void seasonal() {
-        System.out.println("Some fruits are seasonal");
+        System.out.println("Fruit --parent");
     }
 
+    public void taste() {
+        System.out.println("Fruits are tasty --parent");
+    }
+
+    public void color() {
+        System.out.println("Fruits have different colors --parent");
+    }
+
+    public void nutrients() {
+        System.out.println("Fruits are rich in nutrients --parent");
+    }
+
+    public void seasonal() {
+        System.out.println("Some fruits are seasonal --parent");
+    }
+
+    public void seeds() {
+        System.out.println("Fruits have seeds --parent");
+    }
 }

@@ -5,12 +5,21 @@ import com.xworkz.inheritence.internal.element.Oxygen;
 
 public class ElementRunner {
     public static void main(String[] args) {
-        Element element = new Oxygen();
+        Element element = new Element();
         element.atomicNumber();
         element.symbol();
         element.state();
         element.bonding();
         element.reactivity();
+
+        System.out.println("-----------");
+
+        Element oxygenElement = new Oxygen();
+        oxygenElement.atomicNumber();
+        oxygenElement.symbol();
+        oxygenElement.state();
+        oxygenElement.bonding();
+        oxygenElement.reactivity();
 
         System.out.println("-----------");
 

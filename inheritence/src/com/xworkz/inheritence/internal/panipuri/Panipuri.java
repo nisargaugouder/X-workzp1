@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.panipuri;
 
 public class Panipuri {
     public Panipuri() {
-        System.out.println("Running non-arg constructor Panipuri");
+        System.out.println("Panipuri --parent");
     }
-    public void popularStreetFood() {
-        System.out.println("Panipuri is a popular street food in India");
+
+    public void street() {
+        System.out.println("Panipuri is a popular street food --parent");
     }
-    public void madeOfCrispyPuri() {
-        System.out.println("Panipuri consists of crispy puris filled with flavored water");
+
+    public void crispy() {
+        System.out.println("Panipuri is made of crispy puri --parent");
     }
-    public void comesWithVariety() {
-        System.out.println("Panipuri comes in different flavors like spicy, sweet, and tangy");
+
+    public void variety() {
+        System.out.println("Panipuri comes in different flavors --parent");
     }
-    public void servedWithFilling() {
-        System.out.println("Panipuri is served with potato or chickpea filling");
+
+    public void filling() {
+        System.out.println("Panipuri is served with spicy filling --parent");
     }
-    public void bestEatenFresh() {
-        System.out.println("Panipuri is best eaten immediately after preparation");
+
+    public void fresh() {
+        System.out.println("Panipuri is best eaten fresh --parent");
     }
 }

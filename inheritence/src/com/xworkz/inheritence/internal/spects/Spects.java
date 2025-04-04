@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.spects;
 
 public class Spects {
     public Spects() {
-        System.out.println("Running non-arg constructor Spects");
+        System.out.println("Spects --parent");
     }
-    public void improvesVision() {
-        System.out.println("Spects improve vision for people with eyesight problems");
+
+    public void vision() {
+        System.out.println("Spects improve vision --parent");
     }
-    public void hasLenses() {
-        System.out.println("Spects have lenses for correcting vision");
+
+    public void lenses() {
+        System.out.println("Spects have lenses --parent");
     }
-    public void comesInFrames() {
-        System.out.println("Spects come in different frame styles and materials");
+
+    public void frame() {
+        System.out.println("Spects come in frames --parent");
     }
-    public void protectsEyes() {
-        System.out.println("Spects protect eyes from dust and strain");
+
+    public void protect() {
+        System.out.println("Spects protect eyes --parent");
     }
-    public void canBeCustomized() {
-        System.out.println("Spects can have customized lenses based on prescription");
+
+    public void customize() {
+        System.out.println("Spects can be customized --parent");
     }
 }

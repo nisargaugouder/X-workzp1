@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.suit;
 
 public class Suit {
     public Suit() {
-        System.out.println("Running non-arg constructor Suit");
+        System.out.println("Suit --parent");
     }
-    public void wornOnSpecialOccasions() {
-        System.out.println("Suit is worn on formal and special occasions");
+
+    public void wear() {
+        System.out.println("Suit is worn on formal occasions --parent");
     }
-    public void madeOfExpensiveFabric() {
-        System.out.println("Suits are made from premium fabrics like wool and linen");
+
+    public void fabric() {
+        System.out.println("Suit is made of high-quality fabric --parent");
     }
-    public void availableInDifferentStyles() {
-        System.out.println("Suits come in various styles like tuxedo, blazer, and three-piece suit");
+
+    public void style() {
+        System.out.println("Suit comes in different styles --parent");
     }
-    public void enhancesPersonality() {
-        System.out.println("Wearing a suit enhances a person's appearance and confidence");
+
+    public void personality() {
+        System.out.println("Suit enhances personality --parent");
     }
-    public void requiresProperFitting() {
-        System.out.println("A well-fitted suit looks elegant and professional");
+
+    public void fitting() {
+        System.out.println("Suit requires proper fitting --parent");
     }
 }

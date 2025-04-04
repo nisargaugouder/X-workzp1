@@ -5,19 +5,29 @@ import com.xworkz.inheritence.internal.vscode.VSCodeExtension;
 
 public class VSCodeRunner {
     public static void main(String[] args) {
-        VSCode vscode = new VSCodeExtension();
-        vscode.provideEditor();
-        vscode.supportExtensions();
-        vscode.enableDebugging();
-        vscode.integrateWithGit();
-        vscode.supportMultipleLanguages();
+        VSCode vscode = new VSCode();
+        vscode.editor();
+        vscode.extensions();
+        vscode.debug();
+        vscode.git();
+        vscode.languages();
 
-        System.out.println("-----------------");
+        System.out.println("-----------");
+
+        VSCode vscode2 = new VSCodeExtension();
+        vscode2.editor();
+        vscode2.extensions();
+        vscode2.debug();
+        vscode2.git();
+        vscode2.languages();
+
+        System.out.println("-----------");
+
         VSCodeExtension vscodeExtension = new VSCodeExtension();
-        vscodeExtension.provideEditor();
-        vscodeExtension.supportExtensions();
-        vscodeExtension.enableDebugging();
-        vscodeExtension.integrateWithGit();
-        vscodeExtension.supportMultipleLanguages();
+        vscodeExtension.editor();
+        vscodeExtension.extensions();
+        vscodeExtension.debug();
+        vscodeExtension.git();
+        vscodeExtension.languages();
     }
 }

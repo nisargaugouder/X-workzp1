@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.men;
 
 public class Men {
     public Men() {
-        System.out.println("Running non-arg constructor Men");
+        System.out.println("Men --parent");
     }
+
     public void work() {
-        System.out.println("Men are engaged in different professions");
+        System.out.println("Men work to earn --parent");
     }
-    public void takeResponsibility() {
-        System.out.println("Men take responsibility for their families and society");
+
+    public void lead() {
+        System.out.println("Men take responsibility --parent");
     }
-    public void dressWell() {
-        System.out.println("Men dress appropriately for occasions");
+
+    public void dress() {
+        System.out.println("Men dress well --parent");
     }
-    public void stayFit() {
-        System.out.println("Men engage in physical activities to stay fit");
+
+    public void fit() {
+        System.out.println("Men stay fit --parent");
     }
-    public void socialize() {
-        System.out.println("Men socialize and build strong relationships");
+
+    public void social() {
+        System.out.println("Men socialize with others --parent");
     }
 }

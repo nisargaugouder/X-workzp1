@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.flower;
 
 public class Flower {
     public Flower() {
-        System.out.println("Running non-arg constructor Flower");
+        System.out.println("Flower -- parent");
     }
+
     public void bloom() {
-        System.out.println("Flower blooms");
+        System.out.println("Blooming -- parent");
     }
-    public void fragrance() {
-        System.out.println("Flower has fragrance");
+
+    public void scent() {
+        System.out.println("Has fragrance -- parent");
     }
-    public void color() {
-        System.out.println("Flower has color");
+
+    public void shade() {
+        System.out.println("Has color -- parent");
     }
+
     public void petals() {
-        System.out.println("Flower has petals");
+        System.out.println("Has petals -- parent");
     }
-    public void pollination() {
-        System.out.println("Flower helps in pollination");
+
+    public void pollinate() {
+        System.out.println("Pollination occurs -- parent");
     }
 }

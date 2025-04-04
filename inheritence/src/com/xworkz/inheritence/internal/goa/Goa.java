@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.goa;
 
 public class Goa {
     public Goa() {
-        System.out.println("Running non-arg constructor Goa");
+        System.out.println("Goa --parent");
     }
-    public void visitBeach() {
-        System.out.println("Visiting the beautiful beaches of Goa");
+
+    public void beach() {
+        System.out.println("Goa has beautiful beaches --parent");
     }
-    public void enjoyNightlife() {
-        System.out.println("Enjoying the vibrant nightlife of Goa");
+
+    public void nightlife() {
+        System.out.println("Goa offers vibrant nightlife --parent");
     }
-    public void exploreForts() {
-        System.out.println("Exploring historic forts in Goa");
+
+    public void forts() {
+        System.out.println("Goa has historic forts --parent");
     }
-    public void tasteSeafood() {
-        System.out.println("Tasting delicious Goan seafood");
+
+    public void seafood() {
+        System.out.println("Goa serves delicious seafood --parent");
     }
+
     public void relax() {
-        System.out.println("Relaxing in Goa's peaceful environment");
+        System.out.println("Goa is perfect for relaxation --parent");
     }
 }

@@ -2,21 +2,21 @@ package com.xworkz.inheritence.internal.car;
 
 public class Car {
     public Car() {
-        System.out.println("Running non-arg constructor Car");
+        System.out.println("Running non-arg constructor Car--parent");
     }
-    public void usedForTransportation() {
-        System.out.println("Cars are used for transportation");
+    public void transport() {
+        System.out.println("Cars are used for transportation--parent");
     }
-    public void hasFourWheels() {
-        System.out.println("Cars typically have four wheels");
+    public void wheels() {
+        System.out.println("Cars typically have four wheels--parent");
     }
-    public void poweredByEngine() {
-        System.out.println("Traditional cars are powered by an internal combustion engine");
+    public void engine() {
+        System.out.println("Traditional cars are powered by an internal combustion engine--parent");
     }
-    public void comesInVariousModels() {
-        System.out.println("Cars come in various models and designs");
+    public void models() {
+        System.out.println("Cars come in various models and designs--parent");
     }
-    public void hasComfortFeatures() {
-        System.out.println("Cars have comfort features like AC, seats, and music systems");
+    public void comfort() {
+        System.out.println("Cars have comfort features like AC, seats, and music systems--parent");
     }
 }

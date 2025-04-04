@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.church;
 
 public class Church {
     public Church() {
-        System.out.println("Running non-arg constructor Church");
+        System.out.println("Running non-arg constructor Church--parent");
     }
-    public void attendService() {
-        System.out.println("Attending Sunday church service");
+
+    public void service() {
+        System.out.println("Church holds service--parent");
     }
+
     public void pray() {
-        System.out.println("Praying inside the church");
+        System.out.println("People pray in church--parent");
     }
-    public void lightCandles() {
-        System.out.println("Lighting candles for blessings");
+
+    public void candles() {
+        System.out.println("Candles are lit in church--parent");
     }
-    public void singHymns() {
-        System.out.println("Singing hymns in the church choir");
+
+    public void hymns() {
+        System.out.println("Churchgoers sing hymns--parent");
     }
-    public void readBible() {
-        System.out.println("Reading the Bible inside the church");
+
+    public void bible() {
+        System.out.println("Bible is read in church--parent");
     }
 }

@@ -7,18 +7,18 @@ public class FlowerRunner {
     public static void main(String[] args) {
         Flower flower = new Rose();
         flower.bloom();
-        flower.fragrance();
-        flower.color();
+        flower.scent();
+        flower.shade();
         flower.petals();
-        flower.pollination();
+        flower.pollinate();
 
         System.out.println("-----------");
 
         Rose rose = new Rose();
         rose.bloom();
-        rose.fragrance();
-        rose.color();
+        rose.scent();
+        rose.shade();
         rose.petals();
-        rose.pollination();
+        rose.pollinate();
     }
 }

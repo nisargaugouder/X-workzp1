@@ -2,21 +2,26 @@ package com.xworkz.inheritence.internal.photo;
 
 public class Photo {
     public Photo() {
-        System.out.println("Running non-arg constructor Photo");
+        System.out.println("Photo --parent");
     }
+
     public void capture() {
-        System.out.println("Photo captures a moment in time");
+        System.out.println("Photo captures moments --parent");
     }
-    public void storeMemory() {
-        System.out.println("Photo stores beautiful memories");
+
+    public void store() {
+        System.out.println("Photo is stored in albums --parent");
     }
-    public void printedOnPaper() {
-        System.out.println("Photo can be printed on paper");
+
+    public void print() {
+        System.out.println("Photo can be printed on paper --parent");
     }
-    public void availableInDigitalFormat() {
-        System.out.println("Photo is available in digital format");
+
+    public void format() {
+        System.out.println("Photo is available in different formats --parent");
     }
-    public void sharedOnSocialMedia() {
-        System.out.println("Photo can be shared on social media platforms");
+
+    public void share() {
+        System.out.println("Photo can be shared with others --parent");
     }
 }

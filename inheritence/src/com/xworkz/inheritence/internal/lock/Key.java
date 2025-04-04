@@ -1,22 +1,27 @@
 package com.xworkz.inheritence.internal.lock;
 
 public class Key {
-    public Key(){
-        System.out.println("running non-arg const Key");
+    public Key() {
+        System.out.println("Key --parent");
     }
-    public void open(){
-        System.out.println("open Key");
+
+    public void big() {
+        System.out.println("Key is big --parent");
     }
-    public void white(){
-        System.out.println("white Key");
+
+    public void close() {
+        System.out.println("Key can close --parent");
     }
-    public void small(){
-        System.out.println("small Key");
+
+    public void open() {
+        System.out.println("Key can open --parent");
     }
-    public void close(){
-        System.out.println("close Key");
+
+    public void white() {
+        System.out.println("Key is white --parent");
     }
-    public void big(){
-        System.out.println("big Key");
+
+    public void small() {
+        System.out.println("Key is small --parent");
     }
 }
