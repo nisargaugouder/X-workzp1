@@ -1,6 +1,7 @@
 package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.fish.Fish;
+import com.xworkz.inheritence.internal.fish.FishPot;
 import com.xworkz.inheritence.internal.fish.GoldFish;
 
 public class FishRunner {
@@ -29,5 +30,11 @@ public class FishRunner {
         goldFish.swimsUsingFins();
         goldFish.comesInDifferentSpecies();
         goldFish.laysEggs();
+
+        System.out.println("---------casting");
+        FishPot fishPot=new FishPot();
+        fishPot.aqua(fish);
+        fishPot.aqua(goldFish);
+        fishPot.aqua(goldFishRef);
     }
 }

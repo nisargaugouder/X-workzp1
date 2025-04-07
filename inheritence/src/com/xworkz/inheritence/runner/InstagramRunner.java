@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.instagram.Instagram;
 import com.xworkz.inheritence.internal.instagram.InstagramReels;
+import com.xworkz.inheritence.internal.instagram.SocialMedia;
 
 public class InstagramRunner {
     public static void main(String[] args) {
@@ -29,5 +30,11 @@ public class InstagramRunner {
         reels.follow();
         reels.story();
         reels.likes();
+
+        System.out.println("---------casting");
+        SocialMedia socialMedia=new SocialMedia();
+        socialMedia.timeWaste(instagram);
+        socialMedia.timeWaste(instagram2);
+        socialMedia.timeWaste(reels);
     }
 }

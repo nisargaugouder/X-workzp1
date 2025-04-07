@@ -30,4 +30,7 @@ public class CurlyHair extends Hair {
     public void keratin() {
         System.out.println("Curly hair has a unique keratin structure --child");
     }
+    public void comb(){
+        System.out.println("new method comb in child class");
+    }
 }

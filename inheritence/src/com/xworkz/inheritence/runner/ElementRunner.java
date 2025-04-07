@@ -1,5 +1,6 @@
 package com.xworkz.inheritence.runner;
 
+import com.xworkz.inheritence.internal.element.Chemical;
 import com.xworkz.inheritence.internal.element.Element;
 import com.xworkz.inheritence.internal.element.Oxygen;
 
@@ -29,5 +30,14 @@ public class ElementRunner {
         oxygen.state();
         oxygen.bonding();
         oxygen.reactivity();
+
+        System.out.println("-----------");
+
+        Chemical chemical = new Chemical();
+        chemical.property(element);
+
+        chemical.property(oxygenElement);
+
+        chemical.property(oxygen);
     }
 }

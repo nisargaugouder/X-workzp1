@@ -25,4 +25,8 @@ public class CottonBedsheet extends Bedsheet {
     public void design() {
         System.out.println("CottonBedsheet has elegant designs--child");
     }
+
+    public void size(){
+        System.out.println("new method big in child class");
+    }
 }

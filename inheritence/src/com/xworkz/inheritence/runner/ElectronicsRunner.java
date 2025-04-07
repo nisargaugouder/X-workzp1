@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.electronicDevice.ElectronicDevice;
 import com.xworkz.inheritence.internal.electronicDevice.Mobile;
+import com.xworkz.inheritence.internal.electronicDevice.GadgetCase;
 
 public class ElectronicsRunner {
     public static void main(String[] args) {
@@ -29,5 +30,10 @@ public class ElectronicsRunner {
         mobile.battery();
         mobile.charge();
         mobile.connect();
+
+        System.out.println("-----------");
+
+        GadgetCase gadgetCase = new GadgetCase();
+        gadgetCase.store(mobileDevice);
     }
 }

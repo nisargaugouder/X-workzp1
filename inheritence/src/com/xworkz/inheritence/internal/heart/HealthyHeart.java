@@ -30,4 +30,7 @@ public class HealthyHeart extends Heart {
     public void circulate() {
         System.out.println("Healthy heart ensures smooth circulation --child");
     }
+    public void color(){
+        System.out.println("new method wood in child class");
+    }
 }

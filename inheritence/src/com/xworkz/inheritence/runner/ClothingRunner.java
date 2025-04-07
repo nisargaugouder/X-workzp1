@@ -1,5 +1,6 @@
 package com.xworkz.inheritence.runner;
 
+import com.xworkz.inheritence.internal.clothing.ClothShop;
 import com.xworkz.inheritence.internal.clothing.Clothing;
 import com.xworkz.inheritence.internal.clothing.TShirt;
 
@@ -29,5 +30,11 @@ public class ClothingRunner {
         tShirt.fit();
         tShirt.label();
         tShirt.style();
+
+        System.out.println("---casting");
+        ClothShop clothShop=new ClothShop();
+        clothShop.purchase(clothing);
+        clothShop.purchase(tShirt);
+        clothShop.purchase(clothing1);
     }
 }

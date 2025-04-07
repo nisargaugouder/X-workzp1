@@ -2,9 +2,11 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.chatbot.Chatbot;
 import com.xworkz.inheritence.internal.chatbot.AIChatbot;
+import com.xworkz.inheritence.internal.chatbot.Developer;
 
 public class ChatbotRunner {
     public static void main(String[] args) {
+
         Chatbot chatbot1 = new Chatbot();
         chatbot1.reply();
         chatbot1.learn();
@@ -13,6 +15,7 @@ public class ChatbotRunner {
         chatbot1.support();
 
         System.out.println("-------------------");
+
         Chatbot chatbot = new AIChatbot();
         chatbot.reply();
         chatbot.learn();
@@ -21,11 +24,19 @@ public class ChatbotRunner {
         chatbot.support();
 
         System.out.println("-----------------");
+
         AIChatbot aiChatbot = new AIChatbot();
         aiChatbot.reply();
         aiChatbot.learn();
         aiChatbot.help();
         aiChatbot.integrate();
         aiChatbot.support();
+
+        System.out.println("---------- Developer Class Calling ----------");
+
+        Developer developer = new Developer();
+        developer.checkPerformance(chatbot);
+        developer.checkPerformance(chatbot1);
+        developer.checkPerformance(aiChatbot);
     }
 }

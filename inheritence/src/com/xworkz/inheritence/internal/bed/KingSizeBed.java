@@ -25,4 +25,8 @@ public class KingSizeBed extends Bed {
     public void adjust() {
         System.out.println("KingSizeBed has advanced height adjustment--child");
     }
+
+    public void big(){
+        System.out.println("new method big in child class");
+    }
 }

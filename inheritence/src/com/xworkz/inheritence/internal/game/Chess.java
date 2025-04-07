@@ -30,4 +30,8 @@ public class Chess extends Game {
     public void duration() {
         System.out.println("Chess games vary in duration --child");
     }
+
+    public void wood(){
+        System.out.println("new method wood in child class");
+    }
 }

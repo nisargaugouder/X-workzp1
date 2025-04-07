@@ -30,4 +30,8 @@ public class Chair extends Furniture {
     public void design() {
         System.out.println("Chairs have different designs --child");
     }
+
+    public void wood(){
+        System.out.println("new method wood in child class");
+    }
 }

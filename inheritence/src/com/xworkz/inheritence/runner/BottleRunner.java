@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner.bottle;
 
 import com.xworkz.inheritence.internal.bottle.Bottle;
 import com.xworkz.inheritence.internal.bottle.Cap;
+import com.xworkz.inheritence.internal.bottle.Store;
 
 public class BottleRunner {
     public static void main(String[] args) {
@@ -28,5 +29,11 @@ public class BottleRunner {
         directCap.storeMilk();
         directCap.madeOfGlass();
         directCap.frozen();
+
+        System.out.println("---------- Casting Example ----------");
+        Store store = new Store();
+        store.pack(bottle);
+        store.pack(cap);
+        store.pack(directCap);
     }
 }

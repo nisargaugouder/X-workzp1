@@ -30,4 +30,7 @@ public class InstagramReels extends Instagram {
     public void likes() {
         System.out.println("Liking a reel --child");
     }
+    public void phone(){
+        System.out.println("new method phone in child class");
+    }
 }

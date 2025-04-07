@@ -30,4 +30,7 @@ public class NorthGoa extends Goa {
     public void relax() {
         System.out.println("NorthGoa is great for a peaceful retreat --child");
     }
+    public void place(){
+        System.out.println("new method place in child class");
+    }
 }

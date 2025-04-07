@@ -1,33 +1,33 @@
 package com.xworkz.inheritence.internal.drink;
 
 public class Juice extends Drink {
-    public Juice() {
-        super();
-        System.out.println("Running non-arg constructor Juice--child");
-    }
 
     @Override
     public void sip() {
-        System.out.println("Juice is enjoyed in sips--child");
+        System.out.println("Running sip in Juice");
     }
 
     @Override
     public void refresh() {
-        System.out.println("Juice is refreshing--child");
+        System.out.println("Running refresh in Juice");
     }
 
     @Override
     public void cold() {
-        System.out.println("Juice is served cold--child");
+        System.out.println("Running cold in Juice");
     }
 
     @Override
     public void sweet() {
-        System.out.println("Juice is naturally sweet--child");
+        System.out.println("Running sweet in Juice");
     }
 
     @Override
     public void healthy() {
-        System.out.println("Juice is full of nutrients--child");
+        System.out.println("Running healthy in Juice");
+    }
+
+    public void flavor() {
+        System.out.println("Juice has different flavors");
     }
 }

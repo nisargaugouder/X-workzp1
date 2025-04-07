@@ -1,5 +1,6 @@
 package com.xworkz.inheritence.runner;
 
+import com.xworkz.inheritence.internal.hair.Black;
 import com.xworkz.inheritence.internal.hair.Hair;
 import com.xworkz.inheritence.internal.hair.CurlyHair;
 
@@ -29,5 +30,11 @@ public class HairRunner {
         curlyHair.style();
         curlyHair.maintain();
         curlyHair.keratin();
+
+        System.out.println("---------casting");
+        Black black=new Black();
+        black.cool(hair);
+        black.cool(hair2);
+        black.cool(curlyHair);
     }
 }

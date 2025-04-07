@@ -30,4 +30,9 @@ public class GhibliMovie extends Ghibli {
     public void nature() {
         System.out.println("GhibliMovie highlights nature’s beauty --child");
     }
+
+    public void anime(){
+        System.out.println("new method anime in child class");
+    }
+
 }

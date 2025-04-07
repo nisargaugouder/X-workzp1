@@ -1,5 +1,6 @@
 package com.xworkz.inheritence.runner;
 
+import com.xworkz.inheritence.internal.ghibli.ChatGPT;
 import com.xworkz.inheritence.internal.ghibli.Ghibli;
 import com.xworkz.inheritence.internal.ghibli.GhibliMovie;
 
@@ -29,5 +30,11 @@ public class GhibliRunner {
         ghibliMovie.inspire();
         ghibliMovie.fantasy();
         ghibliMovie.nature();
+
+        System.out.println("---------casting");
+        ChatGPT chatGPT=new ChatGPT();
+        chatGPT.platform(ghibli);
+        chatGPT.platform(ghibli2);
+        chatGPT.platform(ghibliMovie);
     }
 }

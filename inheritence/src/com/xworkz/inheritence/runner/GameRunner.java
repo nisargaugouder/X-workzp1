@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.game.Game;
 import com.xworkz.inheritence.internal.game.Chess;
+import com.xworkz.inheritence.internal.game.Play;
 
 public class GameRunner {
     public static void main(String[] args) {
@@ -29,5 +30,11 @@ public class GameRunner {
         chess.opponent();
         chess.winner();
         chess.duration();
+
+        System.out.println("---------casting");
+        Play play=new Play();
+        play.inner(game);
+        play.inner(game2);
+        play.inner(chess);
     }
 }

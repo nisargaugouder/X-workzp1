@@ -1,28 +1,28 @@
 package com.xworkz.inheritence.internal.cur;
 
 public class Dollar extends Currency {
-    public Dollar() {
-        super();
-        System.out.println("Running non-arg constructor Dollar--child");
-    }
 
     @Override
     public void value() {
-        System.out.println("Dollar is a strong currency--child");
+        System.out.println("Running value in Dollar");
     }
 
     @Override
     public void rate() {
-        System.out.println("Dollar's exchange rate varies--child");
+        System.out.println("Running rate in Dollar");
     }
 
     @Override
     public void symbol() {
-        System.out.println("Dollar symbol is $--child");
+        System.out.println("Running symbol in Dollar");
     }
 
     @Override
     public void usage() {
-        System.out.println("Dollar is used globally--child");
+        System.out.println("Running usage in Dollar");
+    }
+
+    public void country() {
+        System.out.println("Dollar currency is used in USA");
     }
 }

@@ -1,28 +1,38 @@
 package com.xworkz.inheritence.internal.caboard;
 
 public class Door extends Caboard {
+
     public Door() {
         super();
-        System.out.println("Running non-arg constructor Door");
+        System.out.println("Running no-arg constructor of Door -- Child Class");
     }
+
     @Override
     public void lock() {
-        System.out.println("Door can be locked securely--child");
+        System.out.println("Locking the door -- Child Class");
     }
+
     @Override
     public void key() {
-        System.out.println("Door has a key for security--child");
+        System.out.println("Key is inserted in door -- Child Class");
     }
+
     @Override
     public void handle() {
-        System.out.println("Door has a stylish handle--child");
+        System.out.println("Handling the door -- Child Class");
     }
+
     @Override
     public void open() {
-        System.out.println("Door can be opened easily--child");
+        System.out.println("Opening the door -- Child Class");
     }
+
     @Override
     public void close() {
-        System.out.println("Door closes smoothly--child");
+        System.out.println("Closing the door -- Child Class");
+    }
+
+    public void knock() {
+        System.out.println("Knocking on the door -- Extra Method in Child Class");
     }
 }

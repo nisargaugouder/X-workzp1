@@ -1,6 +1,7 @@
 package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.bangles.Bangles;
+import com.xworkz.inheritence.internal.bangles.Circle;
 import com.xworkz.inheritence.internal.bangles.GoldBangles;
 
 public class BanglesRunner {
@@ -27,5 +28,11 @@ public class BanglesRunner {
         goldBangles.tradition();
         goldBangles.design();
         goldBangles.symbol();
+
+        System.out.println("-------------casting");
+        Circle circle=new Circle();
+        circle.round(bangles);
+        circle.round(bangles1);
+        circle.round(goldBangles);
     }
 }

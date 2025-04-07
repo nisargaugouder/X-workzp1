@@ -25,4 +25,8 @@ public class House extends Building {
     public void rooms() {
         System.out.println("House has bedrooms, kitchen, and living areas--child");
     }
+
+    public void door(){
+        System.out.println("new method door in child class");
+    }
 }

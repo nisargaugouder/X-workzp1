@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.heart.Heart;
 import com.xworkz.inheritence.internal.heart.HealthyHeart;
+import com.xworkz.inheritence.internal.heart.Organ;
 
 public class HeartRunner {
     public static void main(String[] args) {
@@ -29,5 +30,11 @@ public class HeartRunner {
         healthyHeart.oxygen();
         healthyHeart.waste();
         healthyHeart.circulate();
+
+        System.out.println("---------casting");
+        Organ organ=new Organ();
+        organ.center(heart);
+        organ.center(heart2);
+        organ.center(healthyHeart);
     }
 }

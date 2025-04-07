@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.document.Document;
 import com.xworkz.inheritence.internal.document.PDFDocument;
+import com.xworkz.inheritence.internal.document.Printer;
 
 public class DocumentRunner {
     public static void main(String[] args) {
@@ -29,5 +30,11 @@ public class DocumentRunner {
         pdf.print();
         pdf.format();
         pdf.share();
+
+        System.out.println("---casting");
+        Printer printer = new Printer();
+        printer.process(doc);
+        printer.process(pdf);
+        printer.process(doc1);
     }
 }

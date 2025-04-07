@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.drink.Drink;
 import com.xworkz.inheritence.internal.drink.Juice;
+import com.xworkz.inheritence.internal.drink.Bottle;
 
 public class DrinkRunner {
     public static void main(String[] args) {
@@ -29,5 +30,18 @@ public class DrinkRunner {
         juice.cold();
         juice.sweet();
         juice.healthy();
+
+        System.out.println("-----------");
+
+        Bottle bottle = new Bottle();
+        bottle.display(drink1);
+
+        System.out.println("-----------");
+
+        bottle.display(drink);
+
+        System.out.println("-----------");
+
+        bottle.display(juice);
     }
 }

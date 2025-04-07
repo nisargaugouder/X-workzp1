@@ -25,4 +25,8 @@ public class RubberBand extends Band {
     public void use() {
         System.out.println("RubberBand is used in multiple ways--child");
     }
+
+    public void streach(){
+        System.out.println("new method streach in child class");
+    }
 }

@@ -1,6 +1,7 @@
 package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.bed.Bed;
+import com.xworkz.inheritence.internal.bed.Cotton;
 import com.xworkz.inheritence.internal.bed.KingSizeBed;
 
 public class BedRunner {
@@ -27,5 +28,11 @@ public class BedRunner {
         kingSizeBed.comfort();
         kingSizeBed.decorate();
         kingSizeBed.adjust();
+
+        System.out.println("-----------casting");
+        Cotton cotton=new Cotton();
+        cotton.madeOf(bed);
+        cotton.madeOf(bed1);
+        cotton.madeOf(kingSizeBed);
     }
 }

@@ -1,33 +1,33 @@
 package com.xworkz.inheritence.internal.continent;
 
 public class Asia extends Continent {
-    public Asia() {
-        super();
-        System.out.println("Running non-arg constructor Asia--child");
-    }
 
     @Override
     public void countries() {
-        System.out.println("Asia has countries like India and China--child");
+        System.out.println("Running countries in Asia");
     }
 
     @Override
     public void population() {
-        System.out.println("Asia has the highest population--child");
+        System.out.println("Running population in Asia");
     }
 
     @Override
     public void culture() {
-        System.out.println("Asia has rich cultural diversity--child");
+        System.out.println("Running culture in Asia");
     }
 
     @Override
     public void economy() {
-        System.out.println("Asia has strong growing economies--child");
+        System.out.println("Running economy in Asia");
     }
 
     @Override
     public void climate() {
-        System.out.println("Asia has tropical and temperate climates--child");
+        System.out.println("Running climate in Asia");
+    }
+
+    public void famousFor() {
+        System.out.println("Asia is famous for its diversity");
     }
 }

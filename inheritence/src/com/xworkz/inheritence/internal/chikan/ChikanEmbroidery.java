@@ -1,33 +1,33 @@
 package com.xworkz.inheritence.internal.chikan;
 
 public class ChikanEmbroidery extends Chikan {
-    public ChikanEmbroidery() {
-        super();
-        System.out.println("Running non-arg constructor ChikanEmbroidery--child");
-    }
 
     @Override
     public void art() {
-        System.out.println("ChikanEmbroidery is a refined traditional art--child");
+        System.out.println("Chikan Embroidery is a traditional art");
     }
 
     @Override
     public void handMade() {
-        System.out.println("ChikanEmbroidery is handcrafted with precision--child");
+        System.out.println("Chikan Embroidery is hand stitched");
     }
 
     @Override
     public void origin() {
-        System.out.println("ChikanEmbroidery has deep roots in Lucknow--child");
+        System.out.println("Chikan Embroidery originated in Lucknow");
     }
 
     @Override
     public void design() {
-        System.out.println("ChikanEmbroidery features intricate designs--child");
+        System.out.println("Chikan Embroidery has unique patterns");
     }
 
     @Override
     public void fabric() {
-        System.out.println("ChikanEmbroidery is beautifully done on fabrics--child");
+        System.out.println("Chikan Embroidery uses cotton or silk fabric");
+    }
+
+    public void stitch() {
+        System.out.println("Chikan Embroidery involves detailed stitching");
     }
 }

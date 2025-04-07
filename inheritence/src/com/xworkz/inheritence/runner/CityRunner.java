@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.city.City;
 import com.xworkz.inheritence.internal.city.NewYork;
+import com.xworkz.inheritence.internal.city.Mayor;
 
 public class CityRunner {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class CityRunner {
         newYork.visit();
         newYork.life();
         newYork.business();
+        newYork.statueOfLiberty();
+
+        System.out.println("-----------");
+
+        Mayor mayor = new Mayor();
+        mayor.manageCity(newYork);
+        mayor.manageCity(city1);
+        mayor.manageCity(city);
     }
 }

@@ -30,4 +30,8 @@ public class Apple extends Fruit {
     public void seeds() {
         System.out.println("Apples have small seeds inside --child");
     }
+
+    public void grow(){
+        System.out.println("new method grow in child class");
+    }
 }

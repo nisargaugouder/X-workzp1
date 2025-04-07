@@ -19,6 +19,7 @@ public class KeyRunner {
         key2.close();
         key2.open();
         key2.white();
+
         key2.small();
 
         System.out.println("-----------");
@@ -29,5 +30,8 @@ public class KeyRunner {
         lock.open();
         lock.white();
         lock.small();
+
+
+        System.out.println("---------casting");
     }
 }

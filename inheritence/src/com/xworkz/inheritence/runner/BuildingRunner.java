@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.building.Building;
 import com.xworkz.inheritence.internal.building.House;
+import com.xworkz.inheritence.internal.building.Pg;
 
 public class BuildingRunner {
     public static void main(String[] args) {
@@ -27,5 +28,11 @@ public class BuildingRunner {
         house.floors();
         house.foundation();
         house.rooms();
+
+        System.out.println("------casting");
+        Pg pg=new Pg();
+        pg.ladies(building);
+        pg.ladies(building1);
+        pg.ladies(house);
     }
 }

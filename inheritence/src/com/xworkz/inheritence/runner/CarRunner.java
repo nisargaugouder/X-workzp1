@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.car.Car;
 import com.xworkz.inheritence.internal.car.ElectricCar;
+import com.xworkz.inheritence.internal.car.Rent;
 
 public class CarRunner {
     public static void main(String[] args) {
@@ -27,5 +28,11 @@ public class CarRunner {
         electricCar.engine();
         electricCar.models();
         electricCar.comfort();
+
+        System.out.println("---casting");
+        Rent rent=new Rent();
+        rent.rentCar(car1);
+        rent.rentCar(car2);
+        rent.rentCar(electricCar);
     }
 }

@@ -1,7 +1,8 @@
 package com.xworkz.inheritence.runner;
 
-import com.xworkz.inheritence.internal.cover.Cover;
 import com.xworkz.inheritence.internal.cover.BookCover;
+import com.xworkz.inheritence.internal.cover.BookStore;
+import com.xworkz.inheritence.internal.cover.Cover;
 
 public class CoverRunner {
     public static void main(String[] args) {
@@ -29,5 +30,12 @@ public class CoverRunner {
         bookCover.grip();
         bookCover.waterproof();
         bookCover.enhance();
+
+        System.out.println("---casting");
+
+        BookStore bookStore = new BookStore();
+        bookStore.sell(cover);
+        bookStore.sell(bookCover);
+        bookStore.sell(cover1);
     }
 }

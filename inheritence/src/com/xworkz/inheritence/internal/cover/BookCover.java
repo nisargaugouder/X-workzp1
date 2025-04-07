@@ -1,33 +1,33 @@
 package com.xworkz.inheritence.internal.cover;
 
 public class BookCover extends Cover {
-    public BookCover() {
-        super();
-        System.out.println("Running non-arg constructor BookCover--child");
-    }
 
     @Override
     public void protect() {
-        System.out.println("Book covers protect pages--child");
+        System.out.println("Running protect in BookCover");
     }
 
     @Override
     public void design() {
-        System.out.println("Book covers have attractive designs--child");
+        System.out.println("Running design in BookCover");
     }
 
     @Override
     public void grip() {
-        System.out.println("Book covers provide a good grip--child");
+        System.out.println("Running grip in BookCover");
     }
 
     @Override
     public void waterproof() {
-        System.out.println("Book covers can be waterproof--child");
+        System.out.println("Running waterproof in BookCover");
     }
 
     @Override
     public void enhance() {
-        System.out.println("Book covers enhance book's look--child");
+        System.out.println("Running enhance in BookCover");
+    }
+
+    public void brand() {
+        System.out.println("BookCover brand is Classmate");
     }
 }

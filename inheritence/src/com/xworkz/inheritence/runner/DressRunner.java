@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.dress.Dress;
 import com.xworkz.inheritence.internal.dress.PartyDress;
+import com.xworkz.inheritence.internal.dress.Wardrobe;
 
 public class DressRunner {
     public static void main(String[] args) {
@@ -29,5 +30,10 @@ public class DressRunner {
         partyDress.gender();
         partyDress.comfort();
         partyDress.material();
+
+        System.out.println("-----------");
+
+        Wardrobe wardrobe = new Wardrobe();
+        wardrobe.display(new PartyDress());
     }
 }

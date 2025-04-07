@@ -1,5 +1,6 @@
 package com.xworkz.inheritence.runner;
 
+import com.xworkz.inheritence.internal.goa.Dream;
 import com.xworkz.inheritence.internal.goa.Goa;
 import com.xworkz.inheritence.internal.goa.NorthGoa;
 
@@ -29,5 +30,11 @@ public class GoaRunner {
         northGoa.forts();
         northGoa.seafood();
         northGoa.relax();
+
+        System.out.println("---------casting");
+        Dream dream=new Dream();
+        dream.baga(goa);
+        dream.baga(goa2);
+        dream.baga(northGoa);
     }
 }

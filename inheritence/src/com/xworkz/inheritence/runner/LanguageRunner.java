@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.language.Language;
 import com.xworkz.inheritence.internal.language.Java;
+import com.xworkz.inheritence.internal.language.Python;
 
 public class LanguageRunner {
     public static void main(String[] args) {
@@ -29,5 +30,11 @@ public class LanguageRunner {
         java.communicate();
         java.grammar();
         java.origin();
+
+        System.out.println("----------casting");
+        Python python=new Python();
+        python.tech(lang);
+        python.tech(lang2);
+        python.tech(java);
     }
 }

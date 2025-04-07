@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.keyboard.Keyboard;
 import com.xworkz.inheritence.internal.keyboard.MechanicalKeyboard;
+import com.xworkz.inheritence.internal.keyboard.Plastic;
 
 public class KeyboardRunner {
     public static void main(String[] args) {
@@ -29,5 +30,11 @@ public class KeyboardRunner {
         mechanicalKeyboard.press();
         mechanicalKeyboard.backlight();
         mechanicalKeyboard.wireless();
+
+        System.out.println("---------casting");
+        Plastic plastic=new Plastic();
+        plastic.madeOf(keyboard);
+        plastic.madeOf(keyboard2);
+        plastic.madeOf(mechanicalKeyboard);
     }
 }

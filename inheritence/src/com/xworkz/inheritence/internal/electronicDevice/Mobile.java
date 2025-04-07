@@ -1,33 +1,33 @@
 package com.xworkz.inheritence.internal.electronicDevice;
 
 public class Mobile extends ElectronicDevice {
-    public Mobile() {
-        super();
-        System.out.println("Mobile created --child");
-    }
 
     @Override
     public void powerOn() {
-        System.out.println("Mobile booting up --child");
+        System.out.println("Running powerOn in Mobile");
     }
 
     @Override
     public void powerOff() {
-        System.out.println("Mobile shutting down --child");
+        System.out.println("Running powerOff in Mobile");
     }
 
     @Override
     public void battery() {
-        System.out.println("Checking mobile battery --child");
+        System.out.println("Running battery in Mobile");
     }
 
     @Override
     public void charge() {
-        System.out.println("Charging mobile --child");
+        System.out.println("Running charge in Mobile");
     }
 
     @Override
     public void connect() {
-        System.out.println("Connecting mobile to network --child");
+        System.out.println("Running connect in Mobile");
+    }
+
+    public void camera() {
+        System.out.println("Mobile has a high-quality Camera");
     }
 }

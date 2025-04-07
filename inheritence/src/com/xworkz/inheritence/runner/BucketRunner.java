@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.bucket.Bucket;
 import com.xworkz.inheritence.internal.bucket.PlasticBucket;
+import com.xworkz.inheritence.internal.bucket.Storage;
 
 public class BucketRunner {
     public static void main(String[] args) {
@@ -27,5 +28,11 @@ public class BucketRunner {
         plasticBucket.fill();
         plasticBucket.empty();
         plasticBucket.clean();
+
+        System.out.println("-------casting example------------");
+        Storage storage = new Storage();
+        storage.use(bucket);
+        storage.use(bucket1);
+        storage.use(plasticBucket);
     }
 }

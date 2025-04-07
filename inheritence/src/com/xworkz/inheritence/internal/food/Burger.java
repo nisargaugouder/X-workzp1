@@ -30,4 +30,8 @@ public class Burger extends Food {
     public void spice() {
         System.out.println("Spicy -- child");
     }
+
+    public void full(){
+        System.out.println("new method full in child class");
+    }
 }

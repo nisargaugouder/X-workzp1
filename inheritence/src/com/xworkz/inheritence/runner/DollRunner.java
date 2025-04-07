@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.doll.Doll;
 import com.xworkz.inheritence.internal.doll.BarbieDoll;
+import com.xworkz.inheritence.internal.doll.ToyBox;
 
 public class DollRunner {
     public static void main(String[] args) {
@@ -29,5 +30,12 @@ public class DollRunner {
         barbie.talk();
         barbie.move();
         barbie.collect();
+
+        System.out.println("---casting---");
+
+        ToyBox toyBox = new ToyBox();
+        toyBox.display(doll1);
+        toyBox.display(doll);
+        toyBox.display(barbie);
     }
 }

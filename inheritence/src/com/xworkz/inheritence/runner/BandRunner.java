@@ -1,7 +1,9 @@
 package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.band.Band;
+import com.xworkz.inheritence.internal.band.MusicBand;
 import com.xworkz.inheritence.internal.band.RubberBand;
+import com.xworkz.inheritence.internal.employee.Manager;
 
 public class BandRunner {
     public static void main(String[] args) {
@@ -27,5 +29,11 @@ public class BandRunner {
         rubberBand.size();
         rubberBand.material();
         rubberBand.use();
+
+        System.out.println("-------casting");
+        MusicBand musicBand=new MusicBand();
+        musicBand.Music(band1);
+        musicBand.Music(band);
+        musicBand.Music(rubberBand);
     }
 }

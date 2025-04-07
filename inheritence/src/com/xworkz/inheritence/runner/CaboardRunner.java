@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.caboard.Caboard;
 import com.xworkz.inheritence.internal.caboard.Door;
+import com.xworkz.inheritence.internal.caboard.Lock;
 
 public class CaboardRunner {
     public static void main(String[] args) {
@@ -27,6 +28,11 @@ public class CaboardRunner {
         door.handle();
         door.open();
         door.close();
-    }
 
+        System.out.println("-------- Casting Example ----------");
+        Lock lock = new Lock();
+        lock.secure(caboard);
+        lock.secure(door);
+        lock.secure(caboard1);
+    }
 }

@@ -30,4 +30,8 @@ public class Diwali extends Festival {
     public void gathering() {
         System.out.println("Diwali is celebrated with family --child");
     }
+
+    public void holiday(){
+        System.out.println("new method holiday in child class");
+    }
 }

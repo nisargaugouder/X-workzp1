@@ -30,4 +30,7 @@ public class SilkKurta extends Kurta {
     public void pairWithPajama() {
         System.out.println("SilkKurta is paired with a pajama --child");
     }
+    public void pair(){
+        System.out.println("new method");
+    }
 }

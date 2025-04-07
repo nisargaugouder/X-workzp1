@@ -1,6 +1,7 @@
 package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.bedsheet.Bedsheet;
+import com.xworkz.inheritence.internal.bedsheet.Color;
 import com.xworkz.inheritence.internal.bedsheet.CottonBedsheet;
 
 public class BedsheetRunner {
@@ -27,5 +28,11 @@ public class BedsheetRunner {
         cottonBedsheet.fold();
         cottonBedsheet.texture();
         cottonBedsheet.design();
+
+        System.out.println("--------casting");
+        Color color=new Color();
+        color.select(bedsheet);
+        color.select(bedsheet1);
+        color.select(cottonBedsheet);
     }
 }

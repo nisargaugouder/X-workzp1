@@ -25,4 +25,8 @@ public class ElectricCar extends Car {
     public void comfort() {
         System.out.println("Electric cars offer modern comfort features--child");
     }
+
+    public void size(){
+        System.out.println("new method size in child class");
+    }
 }

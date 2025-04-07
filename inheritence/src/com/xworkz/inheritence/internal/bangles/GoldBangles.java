@@ -25,4 +25,11 @@ public class GoldBangles extends Bangles {
     public void symbol() {
         System.out.println("GoldBangles symbolize wealth and tradition--child");
     }
+
+    public void cost(){
+        System.out.println("new method cost in child class");
+    }
 }
+
+
+

@@ -30,4 +30,7 @@ public class MechanicalKeyboard extends Keyboard {
     public void wireless() {
         System.out.println("Supports Bluetooth --child");
     }
+    public void solid(){
+        System.out.println("new method solid in child class");
+    }
 }

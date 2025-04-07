@@ -30,4 +30,8 @@ public class Java extends Language {
     public void origin() {
         System.out.println("Java originated in 1995 --child");
     }
+
+    public void difficult(){
+        System.out.println("new method");
+    }
 }

@@ -1,10 +1,12 @@
 package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.color.Color;
+import com.xworkz.inheritence.internal.color.ColorShop;
 import com.xworkz.inheritence.internal.color.Red;
 
 public class ColorRunner {
     public static void main(String[] args) {
+
         Color color1 = new Color();
         color1.display();
         color1.mix();
@@ -26,5 +28,12 @@ public class ColorRunner {
         red.mix();
         red.brighten();
         red.fade();
+
+        System.out.println("---casting");
+
+        ColorShop colorShop = new ColorShop();
+        colorShop.purchase(color);
+        colorShop.purchase(red);
+        colorShop.purchase(color1);
     }
 }

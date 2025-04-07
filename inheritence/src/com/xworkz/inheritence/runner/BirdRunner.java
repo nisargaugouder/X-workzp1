@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner.bird;
 
 import com.xworkz.inheritence.internal.bird.Bird;
 import com.xworkz.inheritence.internal.bird.Eagle;
+import com.xworkz.inheritence.internal.bird.Forest;
 
 public class BirdRunner {
     public static void main(String[] args) {
@@ -28,5 +29,11 @@ public class BirdRunner {
         directEagle.layEggs();
         directEagle.sound();
         directEagle.vision();
+
+        System.out.println("-------casting example------------");
+        Forest forest = new Forest();
+        forest.observe(bird);
+        forest.observe(eagle);
+        forest.observe(directEagle);
     }
 }

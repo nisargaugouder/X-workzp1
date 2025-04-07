@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner.book;
 
 import com.xworkz.inheritence.internal.book.Book;
 import com.xworkz.inheritence.internal.book.Novel;
+import com.xworkz.inheritence.internal.book.Library;
 
 public class BookRunner {
     public static void main(String[] args) {
@@ -28,5 +29,11 @@ public class BookRunner {
         directNovel.publish();
         directNovel.genre();
         directNovel.pages();
+
+        System.out.println("-------casting example------------");
+        Library library = new Library();
+        library.display(book);
+        library.display(novel);
+        library.display(directNovel);
     }
 }

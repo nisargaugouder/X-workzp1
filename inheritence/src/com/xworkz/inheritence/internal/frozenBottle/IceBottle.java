@@ -30,4 +30,8 @@ public class IceBottle extends FrozenBottle {
     public void carry() {
         System.out.println("Portable and lightweight --child");
     }
+
+    public void costly(){
+        System.out.println("new method costly in child classs");
+    }
 }

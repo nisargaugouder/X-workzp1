@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.fruit.Fruit;
 import com.xworkz.inheritence.internal.fruit.Apple;
+import com.xworkz.inheritence.internal.fruit.Sweet;
 
 public class FruitRunner {
     public static void main(String[] args) {
@@ -29,5 +30,12 @@ public class FruitRunner {
         apple.nutrients();
         apple.seasonal();
         apple.seeds();
+
+        System.out.println("-----------casting");
+        Sweet sweet=new Sweet();
+        sweet.size(fruit);
+        sweet.size(fruit2);
+        sweet.size(apple);
+
     }
 }

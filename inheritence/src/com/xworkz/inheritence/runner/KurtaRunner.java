@@ -1,5 +1,6 @@
 package com.xworkz.inheritence.runner;
 
+import com.xworkz.inheritence.internal.kurta.Collection;
 import com.xworkz.inheritence.internal.kurta.Kurta;
 import com.xworkz.inheritence.internal.kurta.SilkKurta;
 
@@ -29,5 +30,11 @@ public class KurtaRunner {
         silkKurta.festivalWear();
         silkKurta.design();
         silkKurta.pairWithPajama();
+
+        System.out.println("--------casting");
+        Collection collection=new Collection();
+        collection.india(kurta);
+        collection.india(kurta2);
+        collection.india(silkKurta);
     }
 }

@@ -2,9 +2,11 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.earpods.Earpods;
 import com.xworkz.inheritence.internal.earpods.WirelessEarpods;
+import com.xworkz.inheritence.internal.earpods.Case;
 
 public class EarpodsRunner {
     public static void main(String[] args) {
+
         Earpods earpods = new Earpods();
         earpods.play();
         earpods.charge();
@@ -29,5 +31,12 @@ public class EarpodsRunner {
         wirelessEarpods.connect();
         wirelessEarpods.noiseCancel();
         wirelessEarpods.touchControl();
+
+        System.out.println("-----------------");
+
+        Case caseObj = new Case();
+        caseObj.carry(wirelessEarpods);
+        caseObj.carry(wireless);
+        caseObj.carry(earpods);
     }
 }

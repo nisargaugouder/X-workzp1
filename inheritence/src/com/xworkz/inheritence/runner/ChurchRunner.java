@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.church.Church;
 import com.xworkz.inheritence.internal.church.CatholicChurch;
+import com.xworkz.inheritence.internal.church.Father;
 
 public class ChurchRunner {
     public static void main(String[] args) {
@@ -27,5 +28,11 @@ public class ChurchRunner {
         catholicChurch.candles();
         catholicChurch.hymns();
         catholicChurch.bible();
+
+        System.out.println("---------- Father Class Calling ----------");
+        Father father = new Father();
+        father.conductPrayer(church);
+        father.conductPrayer(church1);
+        father.conductPrayer(catholicChurch);
     }
 }

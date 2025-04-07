@@ -1,6 +1,7 @@
 package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.apple.Apple;
+import com.xworkz.inheritence.internal.apple.Fruit;
 import com.xworkz.inheritence.internal.apple.GreenApple;
 
 public class AppleRunner {
@@ -27,5 +28,11 @@ public class AppleRunner {
         greenApple.boostImmunity();
         greenApple.availableInSeasons();
         greenApple.usedInCooking();
+
+        System.out.println("-------casting example------------");
+        Fruit fruit=new Fruit();
+        fruit.eat(apple);
+        fruit.eat(apple1);
+        fruit.eat(greenApple);
     }
 }

@@ -2,6 +2,7 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.festival.Diwali;
 import com.xworkz.inheritence.internal.festival.Festival;
+import com.xworkz.inheritence.internal.festival.Hindu;
 
 public class FestivalRunner {
     public static void main(String[] args) {
@@ -29,5 +30,11 @@ public class FestivalRunner {
         diwali.holidays();
         diwali.food();
         diwali.gathering();
+
+        System.out.println("----------casting");
+        Hindu hindu=new Hindu();
+        hindu.celebrate(festival);
+        hindu.celebrate(diwali);
+        hindu.celebrate(diwaliRef);
     }
 }

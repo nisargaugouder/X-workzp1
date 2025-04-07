@@ -1,5 +1,6 @@
 package com.xworkz.inheritence.runner;
 
+import com.xworkz.inheritence.internal.cur.Bank;
 import com.xworkz.inheritence.internal.cur.Currency;
 import com.xworkz.inheritence.internal.cur.Dollar;
 
@@ -26,5 +27,11 @@ public class CurrRunner {
         dollar.rate();
         dollar.symbol();
         dollar.usage();
+
+        System.out.println("---casting");
+        Bank bank = new Bank();
+        bank.exchange(currency1);
+        bank.exchange(currency);
+        bank.exchange(dollar);
     }
 }

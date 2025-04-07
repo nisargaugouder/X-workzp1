@@ -30,4 +30,8 @@ public class GoldFish extends Fish {
     public void laysEggs() {
         System.out.println("GoldFish lays eggs for reproduction --child");
     }
+
+    public void gold(){
+        System.out.println("new method gold in child class");
+    }
 }

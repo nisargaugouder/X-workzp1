@@ -1,6 +1,7 @@
 package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.appliance.Appliance;
+import com.xworkz.inheritence.internal.appliance.Fridge;
 import com.xworkz.inheritence.internal.appliance.WashingMachine;
 
 public class ApplianceRunner {
@@ -27,5 +28,11 @@ public class ApplianceRunner {
         washingMachine.consumeElectricity();
         washingMachine.function();
         washingMachine.brand();
+
+        System.out.println("---------casting");
+        Fridge fridge=new Fridge();
+        fridge.open(appliance);
+        fridge.open(appliance1);
+        fridge.open(washingMachine);
     }
 }

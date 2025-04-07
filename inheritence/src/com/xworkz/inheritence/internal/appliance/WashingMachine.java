@@ -25,4 +25,8 @@ public class WashingMachine extends Appliance {
     public void brand() {
         System.out.println("WashingMachine has a specific brand--child");
     }
+
+    public void size(){
+        System.out.println("new method size in child class");
+    }
 }

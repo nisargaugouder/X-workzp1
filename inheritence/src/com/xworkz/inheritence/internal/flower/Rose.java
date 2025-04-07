@@ -30,4 +30,8 @@ public class Rose extends Flower {
     public void pollinate() {
         System.out.println("Pollination occurs -- child");
     }
+
+    public void red(){
+        System.out.println("new method red in child class");
+    }
 }

@@ -2,6 +2,9 @@ package com.xworkz.inheritence.runner;
 
 import com.xworkz.inheritence.internal.furniture.Furniture;
 import com.xworkz.inheritence.internal.furniture.Chair;
+import com.xworkz.inheritence.internal.furniture.Solid;
+
+import java.awt.*;
 
 public class FurnitureRunner {
     public static void main(String[] args) {
@@ -29,5 +32,11 @@ public class FurnitureRunner {
         chair.weight();
         chair.move();
         chair.design();
+
+        System.out.println("-------casting");
+        Solid solid=new Solid();
+        solid.obj(furniture);
+        solid.obj(furniture2);
+        solid.obj(chair);
     }
 }

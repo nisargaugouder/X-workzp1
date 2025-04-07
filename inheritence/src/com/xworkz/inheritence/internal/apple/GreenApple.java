@@ -25,4 +25,8 @@ public class GreenApple extends Apple {
     public void usedInCooking() {
         System.out.println("Apple is used in making pies and juices--child");
     }
+
+    public void slice(){
+        System.out.println("new method slice in child class");
+    }
 }
