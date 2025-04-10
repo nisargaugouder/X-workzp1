@@ -19,4 +19,10 @@ public class Pant {
                 ", color='" + color + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("PantHashCode:"+super.hashCode());
+        return 6320;
+    }
 }

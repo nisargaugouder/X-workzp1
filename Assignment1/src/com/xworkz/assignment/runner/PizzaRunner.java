@@ -7,5 +7,7 @@ public class PizzaRunner {
         String[] toppings = {"Cheese", "Tomato", "Olives"};
         Pizza pizza = new Pizza("Medium", "Thin Crust", toppings);
         System.out.println(pizza);
+        System.out.println(pizza.hashCode());
+        System.out.println("Original HashCode:"+System.identityHashCode(pizza));
     }
 }

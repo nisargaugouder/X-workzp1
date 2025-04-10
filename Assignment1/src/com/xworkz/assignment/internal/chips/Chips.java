@@ -19,4 +19,10 @@ public class Chips {
                 ", price=" + price +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("ChipsHashCode:"+super.hashCode());
+        return 56;
+    }
 }

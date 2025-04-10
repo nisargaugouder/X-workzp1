@@ -16,4 +16,10 @@ public class Apple {
     public String toString(){
         return "Number:" +number +"Size:"+size +"Sweet:"+sweet;
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("AppleHashCode:"+super.hashCode());
+        return 412;
+    }
 }

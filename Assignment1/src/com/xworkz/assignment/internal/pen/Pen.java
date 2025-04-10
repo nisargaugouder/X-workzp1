@@ -16,4 +16,10 @@ public class Pen {
     public String toString() {
         return "Brand: " + brand + " Color: " + color + " Price: " + price;
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("PenHashCode:"+super.hashCode());
+        return 841;
+    }
 }

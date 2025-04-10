@@ -19,4 +19,10 @@ public class Chicken {
                 ", isBroiler=" + isBroiler +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("ChickenHashCode:"+super.hashCode());
+        return 234;
+    }
 }

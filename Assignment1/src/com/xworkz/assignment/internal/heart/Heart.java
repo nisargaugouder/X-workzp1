@@ -19,4 +19,10 @@ public class Heart {
                 ", isHealthy=" + isHealthy +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("HeartHashCode:"+super.hashCode());
+        return 64;
+    }
 }

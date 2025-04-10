@@ -19,4 +19,10 @@ public class Cup {
                 ", material='" + material + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("CupHashCode:"+super.hashCode());
+        return 87545;
+    }
 }

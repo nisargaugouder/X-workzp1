@@ -19,4 +19,10 @@ public class Plant {
                 ", isFlowering=" + isFlowering +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("PlantHashCode:"+super.hashCode());
+        return 82;
+    }
 }

@@ -19,4 +19,10 @@ public class Goa {
                 ", isPopular=" + isPopular +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("GoaHashCode:"+super.hashCode());
+        return 765;
+    }
 }

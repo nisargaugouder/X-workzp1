@@ -19,4 +19,10 @@ public class Phone {
                 ", price=" + price +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("PhoneHashCode:"+super.hashCode());
+        return 8422;
+    }
 }

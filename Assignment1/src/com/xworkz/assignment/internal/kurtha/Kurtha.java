@@ -19,4 +19,10 @@ public class Kurtha {
                 ", color='" + color + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("KurthaHashCode:"+super.hashCode());
+        return 853;
+    }
 }

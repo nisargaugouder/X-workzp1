@@ -19,4 +19,10 @@ public class River {
                 ", origin='" + origin + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("RiverHashCode:"+super.hashCode());
+        return 632;
+    }
 }

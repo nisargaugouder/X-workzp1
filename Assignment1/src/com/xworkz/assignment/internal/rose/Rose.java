@@ -19,4 +19,10 @@ public class Rose {
                 ", hasThorns=" + hasThorns +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("RoseHashCode:"+super.hashCode());
+        return 986;
+    }
 }

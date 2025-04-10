@@ -19,4 +19,10 @@ public class Cardboard {
                 ", color='" + color + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("CardBoardHashCode:"+super.hashCode());
+        return 34;
+    }
 }

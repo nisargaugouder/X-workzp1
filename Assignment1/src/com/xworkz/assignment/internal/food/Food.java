@@ -15,4 +15,10 @@ public class Food {
     public String toString() {
         return "Food{name=" + name + ", price=" + price + ", type=" + type + "}";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("FoodHashCode:"+super.hashCode());
+        return 8741;
+    }
 }

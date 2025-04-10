@@ -16,4 +16,10 @@ public class Bed {
     public String toString() {
         return "Size: " + size + ", Material: " + material + ", Has Headboard: " + hasHeadboard;
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("BedHashCode"+super.hashCode());
+        return 15;
+    }
 }

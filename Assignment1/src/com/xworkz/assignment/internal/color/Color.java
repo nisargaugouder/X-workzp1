@@ -19,4 +19,10 @@ public class Color {
                 ", type='" + type + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("ColorHashCode:"+super.hashCode());
+        return 8451;
+    }
 }

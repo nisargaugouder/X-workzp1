@@ -16,4 +16,10 @@ public class Appliance {
     public String toString() {
         return "Name:"+name + ",Cost:"+cost+",Costly:"+costly;
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("ApplHashCode:"+super.hashCode());
+        return 741;
+    }
 }

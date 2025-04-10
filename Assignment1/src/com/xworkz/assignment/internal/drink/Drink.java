@@ -19,4 +19,10 @@ public class Drink {
                 ", isAlcoholic=" + isAlcoholic +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("DrinkHashCode:"+super.hashCode());
+        return 5451;
+    }
 }

@@ -19,4 +19,10 @@ public class Photo {
                 ", dateTaken='" + dateTaken + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("PhotoHashCode:"+super.hashCode());
+        return 45;
+    }
 }

@@ -15,4 +15,10 @@ public class Laptop {
     public String toString() {
         return "Laptop{brand='" + brand + "', price=" + price + ", processor='" + processor + "'}";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("LaptopHashCode:"+super.hashCode());
+        return 7;
+    }
 }

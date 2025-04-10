@@ -19,4 +19,10 @@ public class Earpods {
                 ", batteryLife=" + batteryLife +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("earpodsHashCode:"+super.hashCode());
+        return 41;
+    }
 }

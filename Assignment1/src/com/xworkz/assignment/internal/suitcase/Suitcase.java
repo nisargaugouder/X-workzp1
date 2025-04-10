@@ -19,4 +19,10 @@ public class Suitcase {
                 ", hasWheels=" + hasWheels +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("SuitcaseHashCode:"+super.hashCode());
+        return 54;
+    }
 }

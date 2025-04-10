@@ -19,4 +19,10 @@ public class Tree {
                 ", age=" + age +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("TreeHashCode:"+super.hashCode());
+        return 8;
+    }
 }

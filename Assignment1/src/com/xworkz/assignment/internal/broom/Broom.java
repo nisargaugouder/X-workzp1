@@ -18,4 +18,11 @@ public class Broom {
                 ", size='" + size +
                 ", use= " + use;
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("BroomHashCode:"+super.hashCode());
+        return 74;
+
+    }
 }

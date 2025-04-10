@@ -16,4 +16,11 @@ public class Book {
     public String toString() {
         return "Title: " + title + ", Author: " + author + ", Pages: " + pages;
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("HashCode:"+super.hashCode());
+        return 654;
+
+    }
 }

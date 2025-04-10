@@ -15,4 +15,10 @@ public class News {
     public String toString() {
         return "News{channel='" + channel + "', language='" + language + "', type='" + type + "'}";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("NewsHashCode:"+super.hashCode());
+        return 2;
+    }
 }

@@ -6,5 +6,7 @@ public class ClothingRunner {
     public static void main(String[] args) {
         Clothing clothing = new Clothing("T-Shirt", "M", 500);
         System.out.println(clothing);
+        System.out.println(clothing.hashCode());
+        System.out.println("Original HashCode:"+System.identityHashCode(clothing));
     }
 }

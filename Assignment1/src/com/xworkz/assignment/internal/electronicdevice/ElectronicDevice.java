@@ -19,4 +19,10 @@ public class ElectronicDevice {
                 ", warrantyPeriod=" + warrantyPeriod +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("ElectronicHashCode:"+super.hashCode());
+        return 54;
+    }
 }

@@ -15,4 +15,10 @@ public class Language {
     public String toString() {
         return "Language{name='" + name + "', speakers=" + speakers + ", type='" + type + "'}";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("LangHashCode:"+super.hashCode());
+        return 8;
+    }
 }

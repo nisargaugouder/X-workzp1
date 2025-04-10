@@ -19,4 +19,10 @@ public class Room {
                 ", hasAC=" + hasAC +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("RoomHashCode:"+super.hashCode());
+        return 5313;
+    }
 }

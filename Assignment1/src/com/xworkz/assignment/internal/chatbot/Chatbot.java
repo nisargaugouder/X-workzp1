@@ -19,4 +19,10 @@ public class Chatbot {
                 ", isAI=" + isAI +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("ChatbotHashCode:"+super.hashCode());
+        return 76;
+    }
 }

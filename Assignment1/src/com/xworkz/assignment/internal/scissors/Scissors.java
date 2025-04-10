@@ -19,4 +19,10 @@ public class Scissors {
                 ", length=" + length +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("ScissorsHashCode:"+super.hashCode());
+        return 425;
+    }
 }

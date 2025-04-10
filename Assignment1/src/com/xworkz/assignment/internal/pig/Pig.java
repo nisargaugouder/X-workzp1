@@ -19,4 +19,10 @@ public class Pig {
                 ", weight=" + weight +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("PigHashCode:"+super.hashCode());
+        return 81;
+    }
 }

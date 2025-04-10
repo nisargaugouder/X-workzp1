@@ -19,4 +19,10 @@ public class Cover {
                 ", price=" + price +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("CoverHashCode:"+super.hashCode());
+        return 623;
+    }
 }

@@ -19,4 +19,10 @@ public class Subject {
                 ", teacher='" + teacher + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("SubjectHashCode:"+super.hashCode());
+        return 8;
+    }
 }

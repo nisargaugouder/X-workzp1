@@ -15,4 +15,10 @@ public class Metal {
     public String toString() {
         return "Metal{name='" + name + "', type='" + type + "', price=" + price + "}";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("MetalHashCode:"+super.hashCode());
+        return 822;
+    }
 }

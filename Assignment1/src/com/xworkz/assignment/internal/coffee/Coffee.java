@@ -19,4 +19,10 @@ public class Coffee {
                 ", price=" + price +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("CoffeeHashCode:"+super.hashCode());
+        return 822003;
+    }
 }

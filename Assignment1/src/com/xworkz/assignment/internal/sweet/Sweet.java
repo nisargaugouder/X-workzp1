@@ -19,4 +19,10 @@ public class Sweet {
                 ", isSugarFree=" + isSugarFree +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("SweetHashCode:"+super.hashCode());
+        return 54;
+    }
 }

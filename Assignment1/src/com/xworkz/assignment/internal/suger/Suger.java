@@ -19,4 +19,10 @@ public class Suger {
                 ", color='" + color + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("SugerHashCode:"+super.hashCode());
+        return 54;
+    }
 }

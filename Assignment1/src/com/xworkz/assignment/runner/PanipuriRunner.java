@@ -6,5 +6,7 @@ public class PanipuriRunner {
     public static void main(String[] args) {
         Panipuri panipuri = new Panipuri("Potato", "Mint", 6);
         System.out.println(panipuri);
+        System.out.println(panipuri.hashCode());
+        System.out.println("Original HashCode:"+System.identityHashCode(panipuri));
     }
 }

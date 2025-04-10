@@ -16,4 +16,10 @@ public class Bedsheet {
     public String toString() {
         return "Material: " + material + ", Color: " + color + ", Size: " + size;
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("BedsheetHashCode"+super.hashCode());
+        return 122;
+    }
 }

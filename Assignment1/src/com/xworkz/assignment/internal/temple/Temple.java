@@ -19,4 +19,10 @@ public class Temple {
                 ", yearEstablished=" + yearEstablished +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("templeHashCode:"+super.hashCode());
+        return 841;
+    }
 }

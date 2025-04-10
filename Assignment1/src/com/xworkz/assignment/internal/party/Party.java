@@ -19,4 +19,10 @@ public class Party {
                 ", numberOfGuests=" + numberOfGuests +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("PartyHashCode:"+super.hashCode());
+        return 81;
+    }
 }

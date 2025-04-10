@@ -19,4 +19,10 @@ public class Panipuri {
                 ", quantity=" + quantity +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("PanipuriHashCode:"+super.hashCode());
+        return 75;
+    }
 }

@@ -19,4 +19,10 @@ public class Church {
                 ", capacity=" + capacity +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("ChurchHashCode:"+super.hashCode());
+        return 235;
+    }
 }

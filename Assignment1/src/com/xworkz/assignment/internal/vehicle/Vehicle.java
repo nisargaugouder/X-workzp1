@@ -19,4 +19,10 @@ public class Vehicle {
                 ", year=" + year +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("VehicleHashCode:"+super.hashCode());
+        return 811;
+    }
 }

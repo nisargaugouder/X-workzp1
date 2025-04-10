@@ -15,4 +15,10 @@ public class FrozenBottle {
     public String toString() {
         return "FrozenBottle{flavor=" + flavor + ", price=" + price + ", type=" + type + "}";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("FrozenHashCode:"+super.hashCode());
+        return 85;
+    }
 }

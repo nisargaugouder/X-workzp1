@@ -6,5 +6,7 @@ public class InstagramRunner {
     public static void main(String[] args) {
         Instagram instagram = new Instagram("john_doe", 1500, false);
         System.out.println(instagram);
+        System.out.println(instagram.hashCode());
+        System.out.println("Original HashCode:"+System.identityHashCode(instagram));
     }
 }

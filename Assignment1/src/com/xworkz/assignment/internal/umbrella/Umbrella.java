@@ -19,4 +19,10 @@ public class Umbrella {
                 ", isAutomatic=" + isAutomatic +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("UmbrellaHashCode:"+super.hashCode());
+        return 41;
+    }
 }

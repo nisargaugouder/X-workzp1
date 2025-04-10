@@ -19,4 +19,10 @@ public class Ghibli {
                 ", releaseYear=" + releaseYear +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("GhibliHashCode:"+super.hashCode());
+        return 3255;
+    }
 }

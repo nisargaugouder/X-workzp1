@@ -19,4 +19,10 @@ public class Element {
                 ", atomicNumber=" + atomicNumber +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("ElementHashCode:"+super.hashCode());
+        return 320;
+    }
 }

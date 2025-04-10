@@ -19,4 +19,10 @@ public class Pizza {
                 ", toppings=" + String.join(", ", toppings) +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("PizzaHashCode:"+super.hashCode());
+        return 72;
+    }
 }

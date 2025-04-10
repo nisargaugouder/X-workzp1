@@ -20,4 +20,10 @@ public class Clothing {
                 ", price=" + price +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("ClothingHashCode:"+super.hashCode());
+        return 5263;
+    }
 }

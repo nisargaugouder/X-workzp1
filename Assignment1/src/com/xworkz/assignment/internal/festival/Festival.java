@@ -15,4 +15,10 @@ public class Festival {
     public String toString() {
         return "Festival{name=" + name + ", days=" + days + ", month=" + month + "}";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("FestivalHashCode:"+super.hashCode());
+        return 542;
+    }
 }

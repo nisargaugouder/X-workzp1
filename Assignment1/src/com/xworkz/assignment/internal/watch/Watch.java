@@ -19,4 +19,10 @@ public class Watch {
                 ", price=" + price +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("WatchHashCode:"+super.hashCode());
+        return 643;
+    }
 }

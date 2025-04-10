@@ -6,5 +6,7 @@ public class SlipperRunner {
     public static void main(String[] args) {
         Slipper slipper = new Slipper("Puma", "Rubber", 8);
         System.out.println(slipper);
+        System.out.println(slipper.hashCode());
+        System.out.println("Original HashCode:"+System.identityHashCode(slipper));
     }
 }

@@ -19,4 +19,10 @@ public class Cushion {
                 ", price=" + price +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("CushionHashCode:"+super.hashCode());
+        return 12335;
+    }
 }

@@ -6,5 +6,7 @@ public class ChickenRunner {
     public static void main(String[] args) {
         Chicken chicken = new Chicken("Leghorn", 1, false);
         System.out.println(chicken);
+        System.out.println(chicken.hashCode());
+        System.out.println("Original HashCode:"+System.identityHashCode(chicken));
     }
 }

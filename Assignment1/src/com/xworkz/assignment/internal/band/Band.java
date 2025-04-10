@@ -16,4 +16,10 @@ public class Band {
     public String toString() {
         return "Name: " + name + ", Genre: " + genre + ", Members: " + members;
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("BandHashCode"+super.hashCode());
+        return 746;
+    }
 }

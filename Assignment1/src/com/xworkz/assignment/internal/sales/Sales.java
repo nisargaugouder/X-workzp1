@@ -19,4 +19,10 @@ public class Sales {
                 ", totalRevenue=" + totalRevenue +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("SalesHashCode:"+super.hashCode());
+        return 29;
+    }
 }

@@ -16,4 +16,10 @@ public class Bike {
     public String toString() {
         return "Brand: " + brand + ", Model: " + model + ", Engine Capacity: " + engineCapacity + "cc";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("BikeHashCode:"+super.hashCode());
+        return 46;
+    }
 }

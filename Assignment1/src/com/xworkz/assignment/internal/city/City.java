@@ -19,4 +19,10 @@ public class City {
                 ", population=" + population +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("CityHashCode:"+super.hashCode());
+        return 3456;
+    }
 }

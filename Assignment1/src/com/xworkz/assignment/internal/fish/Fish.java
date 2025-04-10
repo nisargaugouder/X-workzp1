@@ -15,4 +15,10 @@ public class Fish {
     public String toString() {
         return "Fish{name=" + name + ", color=" + color + ", weight=" + weight + "}";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("FishHashCode:"+super.hashCode());
+        return 841;
+    }
 }

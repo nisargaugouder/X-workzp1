@@ -19,4 +19,11 @@ public class Bucket {
                 ", color='" + color + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("BuketHashCode:"+super.hashCode());
+        return 39;
+
+    }
 }

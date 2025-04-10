@@ -19,4 +19,10 @@ public class Tea {
                 ", price=" + price +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("TeaHashCode:"+super.hashCode());
+        return 45;
+    }
 }

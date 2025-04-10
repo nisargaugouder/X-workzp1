@@ -19,4 +19,10 @@ public class Game {
                 ", maxPlayers=" + maxPlayers +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("GameHashCode:"+super.hashCode());
+        return 29;
+    }
 }

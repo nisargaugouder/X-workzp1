@@ -19,4 +19,10 @@ public class Doll {
                 ", height=" + height +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("DollHashCode:"+super.hashCode());
+        return 421;
+    }
 }

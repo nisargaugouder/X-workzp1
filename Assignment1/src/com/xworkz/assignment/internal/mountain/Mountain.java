@@ -15,4 +15,10 @@ public class Mountain {
     public String toString() {
         return "Mountain{name='" + name + "', height=" + height + ", location='" + location + "'}";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("MountainHashCode:"+super.hashCode());
+        return 72;
+    }
 }

@@ -19,4 +19,10 @@ public class Sports {
                 ", type='" + type + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("SportHashCode:"+super.hashCode());
+        return 36;
+    }
 }

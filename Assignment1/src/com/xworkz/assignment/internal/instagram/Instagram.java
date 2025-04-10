@@ -19,4 +19,10 @@ public class Instagram {
                 ", isPrivate=" + isPrivate +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("instagramHashCode:"+super.hashCode());
+        return 34;
+    }
 }

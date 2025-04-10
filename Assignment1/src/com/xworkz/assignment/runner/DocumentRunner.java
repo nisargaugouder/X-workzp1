@@ -6,5 +6,7 @@ public class DocumentRunner {
     public static void main(String[] args) {
         Document document = new Document("Java Basics", "John Doe", 120);
         System.out.println(document);
+        System.out.println(document.hashCode());
+        System.out.println("Original HashCode:"+System.identityHashCode(document));
     }
 }

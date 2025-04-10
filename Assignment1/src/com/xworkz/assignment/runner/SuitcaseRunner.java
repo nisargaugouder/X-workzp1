@@ -6,5 +6,7 @@ public class SuitcaseRunner {
     public static void main(String[] args) {
         Suitcase suitcase = new Suitcase("Samsonite", 35.0, true);
         System.out.println(suitcase);
+        System.out.println(suitcase.hashCode());
+        System.out.println("Original HashCode:"+System.identityHashCode(suitcase));
     }
 }

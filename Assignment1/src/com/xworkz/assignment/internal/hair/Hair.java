@@ -19,4 +19,10 @@ public class Hair {
                 ", length=" + length +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("HairHashCode:"+super.hashCode());
+        return 56;
+    }
 }

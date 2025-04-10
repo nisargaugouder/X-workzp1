@@ -19,4 +19,10 @@ public class Continent {
                 ", countries=" + countries +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("ContinentHashCode:"+super.hashCode());
+        return 754;
+    }
 }

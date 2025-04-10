@@ -15,4 +15,10 @@ public class Netflix {
     public String toString() {
         return "Netflix{plan='" + plan + "', price=" + price + ", screens=" + screens + "}";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("NetflixHashCode:"+super.hashCode());
+        return 0;
+    }
 }

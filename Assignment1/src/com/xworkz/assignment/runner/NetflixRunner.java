@@ -6,5 +6,7 @@ public class NetflixRunner {
     public static void main(String[] args) {
         Netflix netflix = new Netflix("Premium", 649, 4);
         System.out.println(netflix);
+        System.out.println(netflix.hashCode());
+        System.out.println("Original HashCode:"+System.identityHashCode(netflix));
     }
 }

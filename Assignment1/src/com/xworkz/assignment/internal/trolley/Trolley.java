@@ -19,4 +19,10 @@ public class Trolley {
                 ", isMotorized=" + isMotorized +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("TrolleyHashCode:"+super.hashCode());
+        return 62;
+    }
 }

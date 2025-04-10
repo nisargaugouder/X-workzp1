@@ -16,4 +16,11 @@ public class Bird {
     public String toString() {
         return "Species: " + species + ", Color: " + color + ", Wingspan: " + wingspan + " meters";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("BirdHashCode"+super.hashCode());
+        return 23;
+
+    }
 }

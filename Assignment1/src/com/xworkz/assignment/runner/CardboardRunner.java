@@ -6,5 +6,7 @@ public class CardboardRunner {
     public static void main(String[] args) {
         Cardboard cardboard = new Cardboard("Corrugated", 0.5, "Brown");
         System.out.println(cardboard);
+        System.out.println(cardboard.hashCode());
+        System.out.println("Original HashCode:"+System.identityHashCode(cardboard));
     }
 }

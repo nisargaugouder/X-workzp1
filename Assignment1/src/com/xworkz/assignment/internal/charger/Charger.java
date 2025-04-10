@@ -19,4 +19,10 @@ public class Charger {
                 ", isFastCharging=" + isFastCharging +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("ChargerHashCode:"+super.hashCode());
+        return 76;
+    }
 }

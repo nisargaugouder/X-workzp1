@@ -19,4 +19,10 @@ public class Document {
                 ", pages=" + pages +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("DocumentHashCode:"+super.hashCode());
+        return 1953;
+    }
 }

@@ -19,4 +19,10 @@ public class Dress {
                 ", color='" + color + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("DressHashCode:"+super.hashCode());
+        return 451;
+    }
 }

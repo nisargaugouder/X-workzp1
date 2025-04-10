@@ -19,4 +19,10 @@ public class Keyboard {
                 ", numberOfKeys=" + numberOfKeys +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("KeyboardHashCode:"+super.hashCode());
+        return 9;
+    }
 }

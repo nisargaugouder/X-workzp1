@@ -15,4 +15,10 @@ public class Milk {
     public String toString() {
         return "Milk{brand='" + brand + "', type='" + type + "', price=" + price + "}";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("MilkHashCode:"+super.hashCode());
+        return 236;
+    }
 }

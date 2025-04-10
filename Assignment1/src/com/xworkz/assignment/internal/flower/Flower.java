@@ -15,4 +15,10 @@ public class Flower {
     public String toString() {
         return "Flower{name=" + name + ", color=" + color + ", petals=" + petals + "}";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("FlowerHashCode:"+super.hashCode());
+        return 841;
+    }
 }

@@ -19,4 +19,10 @@ public class Potato {
                 ", origin='" + origin + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("PotatoHashCode:"+super.hashCode());
+        return 732;
+    }
 }

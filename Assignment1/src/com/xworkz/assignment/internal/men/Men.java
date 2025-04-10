@@ -15,4 +15,10 @@ public class Men {
     public String toString() {
         return "Men{name='" + name + "', age=" + age + ", occupation='" + occupation + "'}";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("MenHashCode:"+super.hashCode());
+        return 200;
+    }
 }

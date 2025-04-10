@@ -19,4 +19,10 @@ public class Slipper {
                 ", size=" + size +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("SlipperHashCode:"+super.hashCode());
+        return 82;
+    }
 }

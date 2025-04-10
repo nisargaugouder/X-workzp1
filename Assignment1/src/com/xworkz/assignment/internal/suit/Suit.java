@@ -19,4 +19,10 @@ public class Suit {
                 ", size='" + size + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("SuitHashCode:"+super.hashCode());
+        return 545;
+    }
 }

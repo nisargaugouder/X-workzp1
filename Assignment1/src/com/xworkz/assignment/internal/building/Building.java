@@ -19,4 +19,11 @@ public class Building {
                 ", location='" + location + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("BuildHashCode:"+super.hashCode());
+        return 238;
+
+    }
 }

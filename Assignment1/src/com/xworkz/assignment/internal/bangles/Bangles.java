@@ -16,4 +16,10 @@ public class Bangles {
     public String toString() {
         return "Material: " + material + ", Color: " + color + ", Quantity: " + quantity;
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("BangleHashCode"+super.hashCode());
+        return 76;
+    }
 }

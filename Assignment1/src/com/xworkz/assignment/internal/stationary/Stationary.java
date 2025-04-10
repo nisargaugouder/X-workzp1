@@ -19,4 +19,10 @@ public class Stationary {
                 ", brand='" + brand + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("StationaryHashCode:"+super.hashCode());
+        return 51;
+    }
 }

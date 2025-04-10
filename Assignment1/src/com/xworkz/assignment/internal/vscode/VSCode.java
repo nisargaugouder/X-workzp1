@@ -19,4 +19,10 @@ public class VSCode {
                 ", size=" + size +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("VSCodeHashCode:"+super.hashCode());
+        return 5643;
+    }
 }

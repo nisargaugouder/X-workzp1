@@ -19,4 +19,10 @@ public class Cupboard {
                 ", color='" + color + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("CupboardHashCode:"+super.hashCode());
+        return 563;
+    }
 }

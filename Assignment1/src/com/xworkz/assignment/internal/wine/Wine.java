@@ -19,4 +19,10 @@ public class Wine {
                 ", price=" + price +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("WineHashCode:"+super.hashCode());
+        return 5421;
+    }
 }

@@ -21,4 +21,10 @@ public class Ocean {
                 " meters" +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("OceanHashCode:"+super.hashCode());
+        return 842;
+    }
 }

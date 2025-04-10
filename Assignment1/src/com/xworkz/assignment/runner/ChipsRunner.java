@@ -6,5 +6,7 @@ public class ChipsRunner {
     public static void main(String[] args) {
         Chips chips = new Chips("Masala", 50, 20);
         System.out.println(chips);
+        System.out.println(chips.hashCode());
+        System.out.println("Original HashCode:"+System.identityHashCode(chips));
     }
 }

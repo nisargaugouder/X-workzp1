@@ -19,4 +19,10 @@ public class University {
                 ", establishedYear=" + establishedYear +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("UniHashCode:"+super.hashCode());
+        return 412;
+    }
 }

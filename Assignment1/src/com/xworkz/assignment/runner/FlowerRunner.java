@@ -6,5 +6,7 @@ public class FlowerRunner {
     public static void main(String[] args) {
         Flower flower = new Flower("Rose", "Red", 32);
         System.out.println(flower);
+        System.out.println(flower.hashCode());
+        System.out.println("Original HashCode:"+System.identityHashCode(flower));
     }
 }

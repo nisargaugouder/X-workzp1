@@ -15,4 +15,10 @@ public class Lock {
     public String toString() {
         return "Lock{brand='" + brand + "', type='" + type + "', price=" + price + "}";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("LockHashCode:"+super.hashCode());
+        return 822;
+    }
 }

@@ -6,5 +6,7 @@ public class FishRunner {
     public static void main(String[] args) {
         Fish fish = new Fish("GoldFish", "Golden", 0.5);
         System.out.println(fish);
+        System.out.println(fish.hashCode());
+        System.out.println("Original HashCode:"+System.identityHashCode(fish));
     }
 }

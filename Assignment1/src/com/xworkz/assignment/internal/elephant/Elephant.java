@@ -19,4 +19,10 @@ public class Elephant {
                 ", species='" + species + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("ElephantHashCode:"+super.hashCode());
+        return 643;
+    }
 }

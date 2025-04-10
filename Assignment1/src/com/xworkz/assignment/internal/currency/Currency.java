@@ -19,4 +19,10 @@ public class Currency {
                 ", country='" + country + '\'' +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("CurrencyHashCode:"+super.hashCode());
+        return 875;
+    }
 }

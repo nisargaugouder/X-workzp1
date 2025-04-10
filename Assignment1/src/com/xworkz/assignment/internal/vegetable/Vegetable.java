@@ -19,4 +19,10 @@ public class Vegetable {
                 ", weight=" + weight +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("VegieHashCode:"+super.hashCode());
+        return 4122;
+    }
 }

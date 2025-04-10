@@ -19,4 +19,10 @@ public class Curtain {
                 ", length=" + length +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("CurtainHashCode:"+super.hashCode());
+        return 546;
+    }
 }

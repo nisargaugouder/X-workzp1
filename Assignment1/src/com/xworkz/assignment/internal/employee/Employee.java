@@ -15,4 +15,10 @@ public class Employee {
     public String toString() {
         return "Employee{id=" + id + ", name=" + name + ", role=" + role + "}";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("EmployeeHashCode:"+super.hashCode());
+        return 72;
+    }
 }
