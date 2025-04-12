@@ -7,6 +7,12 @@ public class SweetRunner {
         Sweet sweet = new Sweet("Gulab Jamun", "India", false);
         System.out.println(sweet);
         System.out.println(sweet.hashCode());
-        System.out.println("Original HashCode:"+System.identityHashCode(sweet));
+        System.out.println("Original HashCode:" + System.identityHashCode(sweet));
+
+        Sweet sweet1 = new Sweet("Gulab Jamun", "India", false);
+        Sweet sweet2 = new Sweet("Gulab Jamun", "India", false);
+
+        boolean same = sweet1.equals(sweet2);
+        System.out.println("same: " + same);
     }
 }

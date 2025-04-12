@@ -25,4 +25,20 @@ public class Suitcase {
         System.out.println("SuitcaseHashCode:"+super.hashCode());
         return 54;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("obj is null");
+            if(obj instanceof Suitcase){
+                System.out.println("obj instance of class");
+                Suitcase suitcase1=this;
+                Suitcase suitcase2=(Suitcase) obj;
+                if(suitcase1.hasWheels==suitcase2.hasWheels && suitcase1.brand.equals(suitcase2.brand) && suitcase1.capacity==suitcase2.capacity){
+                    System.out.println("both are same:");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

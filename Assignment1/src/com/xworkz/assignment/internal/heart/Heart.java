@@ -25,4 +25,19 @@ public class Heart {
         System.out.println("HeartHashCode:"+super.hashCode());
         return 64;
     }
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Heart){
+                System.out.println("have ref.will compare..");
+                Heart heart1=this;
+                Heart heart2=(Heart) obj;
+                if(heart1.isHealthy==heart2.isHealthy && heart1.beatsPerMinute==heart2.beatsPerMinute){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

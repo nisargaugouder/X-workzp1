@@ -21,4 +21,19 @@ public class Lipstick {
         System.out.println("LipstickHashCode:"+super.hashCode());
         return 8332;
     }
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Lipstick){
+                System.out.println("have ref.will compare..");
+                Lipstick lipstick1=this;
+                Lipstick lipstick2=(Lipstick) obj;
+                if(lipstick1.brand.equals(lipstick2.brand) && lipstick1.price==lipstick2.price){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

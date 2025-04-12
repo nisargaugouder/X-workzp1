@@ -25,4 +25,20 @@ public class Party {
         System.out.println("PartyHashCode:"+super.hashCode());
         return 81;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("obj is null");
+            if(obj instanceof Party){
+                System.out.println("obj instance of class");
+                Party party1=this;
+                Party party2=(Party) obj;
+                if(party1.location.equals(party2.location) && party1.numberOfGuests==party2.numberOfGuests && party1.occasion.equals(party2.occasion)){
+                    System.out.println("both are same:");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

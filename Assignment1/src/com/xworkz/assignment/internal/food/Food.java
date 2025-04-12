@@ -21,4 +21,28 @@ public class Food {
         System.out.println("FoodHashCode:"+super.hashCode());
         return 8741;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Food){
+                System.out.println("have ref.will compare..");
+                Food food1=this;
+                Food food2= (Food) obj;
+                if(food1.name.equals(food2.name) && food2.type.equals(food2.type)){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

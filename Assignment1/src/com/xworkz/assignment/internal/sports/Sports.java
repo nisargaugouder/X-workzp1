@@ -25,4 +25,20 @@ public class Sports {
         System.out.println("SportHashCode:"+super.hashCode());
         return 36;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("obj is null");
+            if(obj instanceof Sports){
+                System.out.println("obj instance of class");
+                Sports sports1=this;
+                Sports sports2=(Sports) obj;
+                if(sports1.name.equals(sports2.name) && sports2.type.equals(sports1.type) && sports1.players==sports2.players){
+                    System.out.println("both are same:");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

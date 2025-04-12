@@ -25,4 +25,20 @@ public class Sales {
         System.out.println("SalesHashCode:"+super.hashCode());
         return 29;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("obj is null");
+            if(obj instanceof Sales){
+                System.out.println("obj instance of class");
+                Sales sales1=this;
+                Sales sales2=(Sales) obj;
+                if(sales1.product.equals(sales2.product) && sales1.quantitySold==sales2.quantitySold && sales1.totalRevenue==sales2.totalRevenue){
+                    System.out.println("both are same:");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

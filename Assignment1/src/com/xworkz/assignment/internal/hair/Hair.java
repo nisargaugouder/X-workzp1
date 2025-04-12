@@ -25,4 +25,19 @@ public class Hair {
         System.out.println("HairHashCode:"+super.hashCode());
         return 56;
     }
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Hair){
+                System.out.println("have ref.will compare..");
+                Hair hair1=this;
+                Hair hair2=(Hair) obj;
+                if(hair1.color.equals(hair2.color) && hair1.type.equals(hair2.type)){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

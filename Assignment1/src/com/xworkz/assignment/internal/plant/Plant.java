@@ -25,4 +25,20 @@ public class Plant {
         System.out.println("PlantHashCode:"+super.hashCode());
         return 82;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("obj is null");
+            if(obj instanceof Plant){
+                System.out.println("obj instance of class");
+                Plant plant1=this;
+                Plant plant2=(Plant) obj;
+                if(plant1.isFlowering==plant2.isFlowering && plant1.height==plant2.height && plant1.species.equals(plant2.species)){
+                    System.out.println("both are same:");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

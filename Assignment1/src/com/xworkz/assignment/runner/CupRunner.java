@@ -7,6 +7,12 @@ public class CupRunner {
         Cup cup = new Cup("Coffee Cup", 120, "Ceramic");
         System.out.println(cup);
         System.out.println(cup.hashCode());
-        System.out.println("Original HashCode:"+System.identityHashCode(cup));
+        System.out.println("Original HashCode:" + System.identityHashCode(cup));
+
+        Cup cup1 = new Cup("Tea Cup", 100, "Glass");
+        Cup cup2 = new Cup("Tea Cup", 100, "Glass");
+
+        boolean same = cup1.equals(cup2);
+        System.out.println("same:" + same);
     }
 }

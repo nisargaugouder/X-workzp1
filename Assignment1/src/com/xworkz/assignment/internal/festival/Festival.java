@@ -21,4 +21,28 @@ public class Festival {
         System.out.println("FestivalHashCode:"+super.hashCode());
         return 542;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDays(int days) {
+        this.days = days;
+    }
+
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Festival){
+                System.out.println("have ref.will compare..");
+                Festival festival1=this;
+                Festival festival2=(Festival) obj;
+                if(festival1.days==festival2.days && festival1.name.equals(festival2.name)){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

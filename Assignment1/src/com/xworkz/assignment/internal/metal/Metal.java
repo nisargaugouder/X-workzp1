@@ -21,4 +21,19 @@ public class Metal {
         System.out.println("MetalHashCode:"+super.hashCode());
         return 822;
     }
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Metal){
+                System.out.println("have ref.will compare..");
+                Metal metal1=this;
+                Metal metal2=(Metal) obj;
+                if(metal1.name.equals(metal2.name) && metal2.type.equals(metal2.type)){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -25,4 +25,24 @@ public class Chips {
         System.out.println("ChipsHashCode:"+super.hashCode());
         return 56;
     }
+
+    public void setFlavor(String flavor) {
+        this.flavor = flavor;
+    }
+
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Chips){
+                System.out.println("have ref.will compare..");
+                Chips chips1=this;
+                Chips chips2=(Chips) obj;
+                if(chips1.flavor.equals(chips2.flavor)){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

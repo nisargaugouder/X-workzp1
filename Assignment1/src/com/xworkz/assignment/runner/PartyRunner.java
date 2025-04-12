@@ -7,6 +7,12 @@ public class PartyRunner {
         Party party = new Party("Birthday", "Bangalore", 50);
         System.out.println(party);
         System.out.println(party.hashCode());
-        System.out.println("Original HashCode:"+System.identityHashCode(party));
+        System.out.println("Original HashCode:" + System.identityHashCode(party));
+
+        Party party1 = new Party("Wedding", "Mysore", 300);
+        Party party2 = new Party("Birthday", "Bangalore", 50);
+
+        boolean same = party1.equals(party2);
+        System.out.println("same: " + same);
     }
 }

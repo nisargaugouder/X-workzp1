@@ -25,4 +25,20 @@ public class Slipper {
         System.out.println("SlipperHashCode:"+super.hashCode());
         return 82;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("obj is null");
+            if(obj instanceof Slipper){
+                System.out.println("obj instance of class");
+                Slipper slipper1=this;
+                Slipper slipper2=(Slipper) obj;
+                if(slipper1.brand.equals(slipper2.brand) && slipper1.size==slipper2.size && slipper1.material.equals(slipper2.material)){
+                    System.out.println("both are same:");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

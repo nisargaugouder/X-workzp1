@@ -7,6 +7,12 @@ public class TrolleyRunner {
         Trolley trolley = new Trolley("Shopping", 50.0, false);
         System.out.println(trolley);
         System.out.println(trolley.hashCode());
-        System.out.println("Original HashCode:"+System.identityHashCode(trolley));
+        System.out.println("Original HashCode:" + System.identityHashCode(trolley));
+
+        Trolley trolley1 = new Trolley("Shopping", 50.0, false);
+        Trolley trolley2 = new Trolley("Shopping", 50.0, false);
+
+        boolean same = trolley1.equals(trolley2);
+        System.out.println("same: " + same);
     }
 }

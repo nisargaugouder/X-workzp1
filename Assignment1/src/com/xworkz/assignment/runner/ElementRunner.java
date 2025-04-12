@@ -7,6 +7,12 @@ public class ElementRunner {
         Element element = new Element("Hydrogen", "H", 1);
         System.out.println(element);
         System.out.println(element.hashCode());
-        System.out.println("Original HashCode:"+System.identityHashCode(element));
+        System.out.println("Original HashCode:" + System.identityHashCode(element));
+
+        Element element1 = new Element("Hydrogen", "H", 1);
+        Element element2 = new Element("Hydrogen", "H", 1);
+
+        boolean same = element1.equals(element2);
+        System.out.println("same:" + same);
     }
 }

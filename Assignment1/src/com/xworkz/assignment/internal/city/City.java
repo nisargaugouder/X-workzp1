@@ -25,4 +25,19 @@ public class City {
         System.out.println("CityHashCode:"+super.hashCode());
         return 3456;
     }
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof City){
+                System.out.println("have ref.will compare..");
+                City city1=this;
+                City city2=(City) obj;
+                if(city1.name.equals(city2.name)){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

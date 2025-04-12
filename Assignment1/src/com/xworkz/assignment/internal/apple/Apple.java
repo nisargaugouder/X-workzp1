@@ -22,4 +22,33 @@ public class Apple {
         System.out.println("AppleHashCode:"+super.hashCode());
         return 412;
     }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public void setSweet(boolean sweet) {
+        this.sweet = sweet;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            Apple apple1=this;
+            Apple apple2=(Apple) obj;
+            if(obj instanceof Apple){
+                System.out.println("have ref.will compare..");
+                if(apple1.sweet==apple2.sweet){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

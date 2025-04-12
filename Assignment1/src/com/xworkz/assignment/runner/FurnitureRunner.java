@@ -7,6 +7,12 @@ public class FurnitureRunner {
         Furniture furniture = new Furniture("Chair", "Wood", 1500.0);
         System.out.println(furniture);
         System.out.println(furniture.hashCode());
-        System.out.println("Original HashCode:"+System.identityHashCode(furniture));
+        System.out.println("Original HashCode:" + System.identityHashCode(furniture));
+
+        Furniture furniture1 = new Furniture("Chair", "Wood", 1500.0);
+        Furniture furniture2 = new Furniture("Chair", "Wood", 1500.0);
+
+        boolean same = furniture1.equals(furniture2);
+        System.out.println("same:" + same);
     }
 }

@@ -7,6 +7,12 @@ public class LockRunner {
         Lock lock = new Lock("Godrej", "Padlock", 250);
         System.out.println(lock);
         System.out.println(lock.hashCode());
-        System.out.println("Original HashCode:"+System.identityHashCode(lock));
+        System.out.println("Original HashCode:" + System.identityHashCode(lock));
+
+        Lock lock1 = new Lock("Godrej", "Padlock", 250);
+        Lock lock2 = new Lock("Godrej", "Padlock", 250);
+
+        boolean same = lock1.equals(lock2);
+        System.out.println("same: " + same);
     }
 }

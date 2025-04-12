@@ -8,5 +8,12 @@ public class ApplianceRunner {
         System.out.println(appliance);
         System.out.println(new Appliance().hashCode());
         System.out.println("original HashCode:"+System.identityHashCode(appliance));
+
+        Appliance appliance1=new Appliance();
+        appliance1.equals(true);
+        Appliance appliance2=new Appliance();
+        appliance2.equals(true);
+        boolean same=appliance1.equals(appliance2);
+        System.out.println("Same:"+same);
     }
 }

@@ -23,6 +23,21 @@ public class Broom {
     public int hashCode() {
         System.out.println("BroomHashCode:"+super.hashCode());
         return 74;
+    }
 
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Broom){
+                System.out.println("have ref.will compare..");
+                Broom broom1=this;
+                Broom broom2=(Broom) obj;
+                if(broom1.use.equals(broom2.use)){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

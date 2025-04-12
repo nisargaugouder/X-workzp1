@@ -7,6 +7,12 @@ public class MenRunner {
         Men men = new Men("Ravi", 28, "Engineer");
         System.out.println(men);
         System.out.println(men.hashCode());
-        System.out.println("Original HashCode:"+System.identityHashCode(men));
+        System.out.println("Original HashCode:" + System.identityHashCode(men));
+
+        Men men1 = new Men("Kiran", 30, "Doctor");
+        Men men2 = new Men("Ravi", 28, "Engineer");
+
+        boolean same = men1.equals(men2);
+        System.out.println("same: " + same);
     }
 }

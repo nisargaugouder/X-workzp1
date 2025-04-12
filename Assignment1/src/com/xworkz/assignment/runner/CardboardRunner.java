@@ -7,6 +7,12 @@ public class CardboardRunner {
         Cardboard cardboard = new Cardboard("Corrugated", 0.5, "Brown");
         System.out.println(cardboard);
         System.out.println(cardboard.hashCode());
-        System.out.println("Original HashCode:"+System.identityHashCode(cardboard));
+        System.out.println("Original HashCode:" + System.identityHashCode(cardboard));
+
+        Cardboard cardboard1 = new Cardboard("Corrugated", 0.5, "Brown");
+        Cardboard cardboard2 = new Cardboard("Corrugated", 0.5, "Brown");
+
+        boolean same = cardboard1.equals(cardboard2);
+        System.out.println("same:" + same);
     }
 }

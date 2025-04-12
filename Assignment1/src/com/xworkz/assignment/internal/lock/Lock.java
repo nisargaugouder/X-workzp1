@@ -21,4 +21,19 @@ public class Lock {
         System.out.println("LockHashCode:"+super.hashCode());
         return 822;
     }
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Lock){
+                System.out.println("have ref.will compare..");
+                Lock lock1=this;
+                Lock lock2=(Lock) obj;
+                if(lock1.brand.equals(lock2.brand) && lock2.type.equals(lock1.type)){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

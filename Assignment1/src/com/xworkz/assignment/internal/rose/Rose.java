@@ -25,4 +25,20 @@ public class Rose {
         System.out.println("RoseHashCode:"+super.hashCode());
         return 986;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("obj is null");
+            if(obj instanceof Rose){
+                System.out.println("obj instance of class");
+                Rose rose1=this;
+                Rose rose2=(Rose) obj;
+                if(rose1.hasThorns==rose2.hasThorns && rose1.color.equals(rose2.color) && rose1.numberOfPetals==rose2.numberOfPetals){
+                    System.out.println("both are same:");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

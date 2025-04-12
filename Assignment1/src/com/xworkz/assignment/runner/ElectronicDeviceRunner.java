@@ -7,6 +7,12 @@ public class ElectronicDeviceRunner {
         ElectronicDevice device = new ElectronicDevice("Laptop", "Dell", 2);
         System.out.println(device);
         System.out.println(device.hashCode());
-        System.out.println("Original HashCode:"+System.identityHashCode(device));
+        System.out.println("Original HashCode:" + System.identityHashCode(device));
+
+        ElectronicDevice device1 = new ElectronicDevice("Laptop", "Dell", 2);
+        ElectronicDevice device2 = new ElectronicDevice("Smartphone", "Samsung", 1);
+
+        boolean same = device1.equals(device2);
+        System.out.println("same:" + same);
     }
 }

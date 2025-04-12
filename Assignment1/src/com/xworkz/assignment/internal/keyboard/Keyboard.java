@@ -19,10 +19,24 @@ public class Keyboard {
                 ", numberOfKeys=" + numberOfKeys +
                 '}';
     }
-
     @Override
     public int hashCode() {
         System.out.println("KeyboardHashCode:"+super.hashCode());
         return 9;
+    }
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Keyboard){
+                System.out.println("have ref.will compare..");
+                Keyboard keyboard1=this;
+                Keyboard keyboard2=(Keyboard) obj;
+                if(keyboard1.brand.equals(keyboard2.brand) && keyboard2.isMechanical==keyboard1.isMechanical){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

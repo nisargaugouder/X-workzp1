@@ -25,4 +25,20 @@ public class Potato {
         System.out.println("PotatoHashCode:"+super.hashCode());
         return 732;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("obj is null");
+            if(obj instanceof Potato){
+                System.out.println("obj instance of class");
+                Potato potato1=this;
+                Potato potato2=(Potato) obj;
+                if(potato1.origin.equals(potato2.origin) && potato1.variety.equals(potato2.variety) && potato1.weight==potato2.weight){
+                    System.out.println("both are same:");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

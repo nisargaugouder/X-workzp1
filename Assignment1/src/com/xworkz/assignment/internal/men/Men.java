@@ -21,4 +21,19 @@ public class Men {
         System.out.println("MenHashCode:"+super.hashCode());
         return 200;
     }
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Men){
+                System.out.println("have ref.will compare..");
+                Men men1=this;
+                Men men2=(Men) obj;
+                if(men1.name.equals(men2.name) && men1.age==men2.age){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

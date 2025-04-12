@@ -7,6 +7,12 @@ public class ChickenRunner {
         Chicken chicken = new Chicken("Leghorn", 1, false);
         System.out.println(chicken);
         System.out.println(chicken.hashCode());
-        System.out.println("Original HashCode:"+System.identityHashCode(chicken));
+        System.out.println("Original HashCode:" + System.identityHashCode(chicken));
+
+        Chicken chicken1 = new Chicken("Leghorn", 1, false);
+        Chicken chicken2 = new Chicken("Leghorn", 1, false);
+
+        boolean same = chicken1.equals(chicken2);
+        System.out.println("same:" + same);
     }
 }

@@ -7,6 +7,12 @@ public class PhoneRunner {
         Phone phone = new Phone("Apple", "iPhone 13", 79999.0);
         System.out.println(phone);
         System.out.println(phone.hashCode());
-        System.out.println("Original HashCode:"+System.identityHashCode(phone));
+        System.out.println("Original HashCode:" + System.identityHashCode(phone));
+
+        Phone phone1 = new Phone("Samsung", "Galaxy S21", 69999.0);
+        Phone phone2 = new Phone("Apple", "iPhone 13", 79999.0);
+
+        boolean same = phone1.equals(phone2);
+        System.out.println("same: " + same);
     }
 }

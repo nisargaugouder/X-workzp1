@@ -21,4 +21,19 @@ public class Laptop {
         System.out.println("LaptopHashCode:"+super.hashCode());
         return 7;
     }
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Laptop){
+                System.out.println("have ref.will compare..");
+                Laptop laptop1=this;
+                Laptop laptop2=(Laptop) obj;
+                if(laptop1.brand.equals(laptop2.brand) && laptop1.price==laptop2.price){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

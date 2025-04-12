@@ -8,5 +8,10 @@ public class BroomRunner {
         System.out.println(broom);
         System.out.println(broom.hashCode());
         System.out.println("Original HashCode:"+System.identityHashCode(broom));
+
+        Broom broom1=new Broom(20,"small","clean");
+        Broom broom2=new Broom(30,"big","clean");
+        boolean same=broom1.equals(broom2);
+        System.out.println("same:"+same);
     }
 }

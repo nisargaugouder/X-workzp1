@@ -21,4 +21,28 @@ public class Fruit {
         System.out.println("FruitHashCode:"+super.hashCode());
         return 3669;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Fruit){
+                System.out.println("have ref.will compare..");
+                Fruit fruit1=this;
+                Fruit fruit2=(Fruit) obj;
+                if(fruit1.name.equals(fruit2.name) && fruit2.color.equals(fruit2.color)){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

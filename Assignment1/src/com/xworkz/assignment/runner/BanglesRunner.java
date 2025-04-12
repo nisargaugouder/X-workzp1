@@ -8,5 +8,12 @@ public class BanglesRunner {
         System.out.println(bangles);
         System.out.println(new Bangles().hashCode());
         System.out.println("Original HashCode:"+System.identityHashCode(bangles));
+
+        Bangles bangles1=new Bangles();
+        bangles1.setColor("blue");
+        Bangles bangles2=new Bangles();
+        bangles2.setColor("blue");
+        boolean same=bangles1.equals(bangles2);
+        System.out.println("same:"+same);
     }
 }

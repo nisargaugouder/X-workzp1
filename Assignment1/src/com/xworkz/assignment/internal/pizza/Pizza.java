@@ -25,4 +25,20 @@ public class Pizza {
         System.out.println("PizzaHashCode:"+super.hashCode());
         return 72;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("obj is null");
+            if(obj instanceof Pizza){
+                System.out.println("obj instance of class");
+                Pizza pizza1=this;
+                Pizza pizza2=(Pizza) obj;
+                if(pizza1.crustType.equals(pizza2.crustType) && pizza1.toppings.equals(pizza2.toppings) && pizza1.size.equals(pizza2.size)){
+                    System.out.println("both are same:");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

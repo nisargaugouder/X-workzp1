@@ -23,4 +23,25 @@ public class Bird {
         return 23;
 
     }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Bird){
+                System.out.println("have ref.will compare..");
+                Bird bird1=this;
+                Bird bird2=(Bird) obj;
+                if(bird1.color.equals(bird2.color)){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

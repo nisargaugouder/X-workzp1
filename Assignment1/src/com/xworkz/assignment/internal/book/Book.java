@@ -21,6 +21,25 @@ public class Book {
     public int hashCode() {
         System.out.println("HashCode:"+super.hashCode());
         return 654;
+    }
 
+    public void setPages(int pages) {
+        this.pages = pages;
+    }
+
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Book){
+                System.out.println("have ref.will compare..");
+                Book book1=this;
+                Book book2=(Book) obj;
+                if(book1.pages==book2.pages){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

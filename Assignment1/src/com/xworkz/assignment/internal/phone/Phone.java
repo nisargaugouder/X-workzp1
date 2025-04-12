@@ -25,4 +25,20 @@ public class Phone {
         System.out.println("PhoneHashCode:"+super.hashCode());
         return 8422;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("obj is null");
+            if(obj instanceof Phone){
+                System.out.println("obj instance of class");
+                Phone phone1=this;
+                Phone phone2=(Phone) obj;
+                if(phone1.brand.equals(phone2.brand) && phone1.price==phone2.price && phone1.model.equals(phone2.model)){
+                    System.out.println("both are same:");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

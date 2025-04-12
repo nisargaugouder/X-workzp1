@@ -25,4 +25,19 @@ public class Kurtha {
         System.out.println("KurthaHashCode:"+super.hashCode());
         return 853;
     }
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Kurtha){
+                System.out.println("have ref.will compare..");
+                Kurtha kurtha1=this;
+                Kurtha kurtha2=(Kurtha) obj;
+                if(kurtha1.color.equals(kurtha2.color) && kurtha2.size.equals(kurtha1.size)){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -25,4 +25,20 @@ public class Stationary {
         System.out.println("StationaryHashCode:"+super.hashCode());
         return 51;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("obj is null");
+            if(obj instanceof Stationary){
+                System.out.println("obj instance of class");
+                Stationary stationary1=this;
+                Stationary stationary2=(Stationary) obj;
+                if(stationary1.brand.equals(stationary2.brand) && stationary1.item.equals(stationary2.item) && stationary1.price==stationary2.price){
+                    System.out.println("both are same:");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

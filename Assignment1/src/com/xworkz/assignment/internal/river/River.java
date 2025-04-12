@@ -25,4 +25,20 @@ public class River {
         System.out.println("RiverHashCode:"+super.hashCode());
         return 632;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("obj is null");
+            if(obj instanceof River){
+                System.out.println("obj instance of class");
+                River river1=this;
+                River river2=(River) obj;
+                if(river1.length==river2.length && river1.name.equals(river2.name) && river1.origin.equals(river2.origin)){
+                    System.out.println("both are same:");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -25,4 +25,20 @@ public class Sweet {
         System.out.println("SweetHashCode:"+super.hashCode());
         return 54;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("obj is null");
+            if(obj instanceof Sweet){
+                System.out.println("obj instance of class");
+                Sweet sweet1=this;
+                Sweet sweet2=(Sweet) obj;
+                if(sweet1.isSugarFree==sweet2.isSugarFree && sweet1.name.equals(sweet2.name) && sweet1.origin.equals(sweet2.origin)){
+                    System.out.println("both are same:");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

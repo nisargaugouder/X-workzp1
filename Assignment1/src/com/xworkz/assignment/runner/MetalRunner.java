@@ -7,6 +7,12 @@ public class MetalRunner {
         Metal metal = new Metal("Gold", "Precious", 5000);
         System.out.println(metal);
         System.out.println(metal.hashCode());
-        System.out.println("Original HashCode:"+System.identityHashCode(metal));
+        System.out.println("Original HashCode:" + System.identityHashCode(metal));
+
+        Metal metal1 = new Metal("Gold", "Precious", 5000);
+        Metal metal2 = new Metal("Gold", "Precious", 5000);
+
+        boolean same = metal1.equals(metal2);
+        System.out.println("same: " + same);
     }
 }

@@ -21,4 +21,28 @@ public class Flower {
         System.out.println("FlowerHashCode:"+super.hashCode());
         return 841;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPetals(int petals) {
+        this.petals = petals;
+    }
+
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Flower){
+                System.out.println("have ref.will compare..");
+                Flower flower1=this;
+                Flower flower2=(Flower) obj;
+                if(flower1.name.equals(flower2.name) && flower2.petals==flower1.petals){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

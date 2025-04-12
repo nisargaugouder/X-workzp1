@@ -22,4 +22,32 @@ public class Bangles {
         System.out.println("BangleHashCode"+super.hashCode());
         return 76;
     }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setMaterial(String material) {
+        this.material = material;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Bangles){
+                System.out.println("have ref.will compare..");
+                Bangles bangles1=this;
+                Bangles bangles2=(Bangles) obj;
+                if(bangles1.color.equals(bangles2.color)){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

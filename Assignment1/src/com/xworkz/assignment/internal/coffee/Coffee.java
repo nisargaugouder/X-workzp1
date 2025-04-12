@@ -25,4 +25,19 @@ public class Coffee {
         System.out.println("CoffeeHashCode:"+super.hashCode());
         return 822003;
     }
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Coffee){
+                System.out.println("have ref.will compare..");
+                Coffee coffee1=this;
+                Coffee coffee2=(Coffee) obj;
+                if(coffee1.price==coffee2.price){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

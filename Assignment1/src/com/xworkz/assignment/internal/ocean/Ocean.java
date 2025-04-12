@@ -27,4 +27,20 @@ public class Ocean {
         System.out.println("OceanHashCode:"+super.hashCode());
         return 842;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("obj is null");
+            if(obj instanceof Ocean){
+                System.out.println("obj instance of class");
+                Ocean ocean1=this;
+                Ocean ocean2=(Ocean) obj;
+                if(ocean1.area==ocean2.area && ocean1.name.equals(ocean2.name) && ocean1.depth==ocean2.depth){
+                    System.out.println("both are same:");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

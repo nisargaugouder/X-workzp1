@@ -25,4 +25,24 @@ public class Cup {
         System.out.println("CupHashCode:"+super.hashCode());
         return 87545;
     }
+
+    public void setMaterial(String material) {
+        this.material = material;
+    }
+
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Cup){
+                System.out.println("have ref.will compare..");
+                Cup cup1=this;
+                Cup cup2=(Cup) obj;
+                if(cup2.material.equals(cup1.material)){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

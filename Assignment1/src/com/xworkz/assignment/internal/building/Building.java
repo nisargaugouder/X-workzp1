@@ -24,6 +24,26 @@ public class Building {
     public int hashCode() {
         System.out.println("BuildHashCode:"+super.hashCode());
         return 238;
+    }
 
+    public void setFloors(int floors) {
+        this.floors = floors;
+    }
+
+
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Building){
+                System.out.println("have ref.will compare..");
+                Building building1=this;
+                Building building2=(Building) obj;
+                if(building1.floors==building2.floors){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

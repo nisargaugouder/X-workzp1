@@ -25,4 +25,24 @@ public class Cupboard {
         System.out.println("CupboardHashCode:"+super.hashCode());
         return 563;
     }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Cupboard){
+                System.out.println("have ref.will compare..");
+                Cupboard cupboard1=this;
+                Cupboard cupboard2=(Cupboard) obj;
+                if(cupboard1.type.equals(cupboard2.type)){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

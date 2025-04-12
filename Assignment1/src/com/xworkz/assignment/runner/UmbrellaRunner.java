@@ -8,5 +8,10 @@ public class UmbrellaRunner {
         System.out.println(umbrella);
         System.out.println(umbrella.hashCode());
         System.out.println("Original HashCode:"+System.identityHashCode(umbrella));
+
+        Umbrella umbrella1=new Umbrella("Blue","XS",false);
+        Umbrella umbrella2=new Umbrella("Black","XS",true);
+        boolean same=umbrella1.equals(umbrella2);
+        System.out.println("both are same:"+same);
     }
 }

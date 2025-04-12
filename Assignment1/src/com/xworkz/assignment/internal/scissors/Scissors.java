@@ -25,4 +25,20 @@ public class Scissors {
         System.out.println("ScissorsHashCode:"+super.hashCode());
         return 425;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("obj is null");
+            if(obj instanceof Scissors){
+                System.out.println("obj instance of class");
+                Scissors scissors1=this;
+                Scissors scissors2=(Scissors) obj;
+                if(scissors1.brand.equals(scissors2.brand) && scissors1.type.equals(scissors2.type) && scissors1.length==scissors2.length){
+                    System.out.println("both are same:");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -22,4 +22,25 @@ public class Bed {
         System.out.println("BedHashCode"+super.hashCode());
         return 15;
     }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Bed){
+                System.out.println("have ref.will compare..");
+                Bed bed1=this;
+                Bed bed2=(Bed) obj;
+                if(bed1.size.equals(bed2.size)){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

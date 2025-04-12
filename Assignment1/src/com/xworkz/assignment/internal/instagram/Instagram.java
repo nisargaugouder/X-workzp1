@@ -25,4 +25,19 @@ public class Instagram {
         System.out.println("instagramHashCode:"+super.hashCode());
         return 34;
     }
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Instagram){
+                System.out.println("have ref.will compare..");
+                Instagram instagram1=this;
+                Instagram instagram2=(Instagram) obj;
+                if(instagram1.followers==instagram2.followers && instagram1.isPrivate==instagram2.isPrivate){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

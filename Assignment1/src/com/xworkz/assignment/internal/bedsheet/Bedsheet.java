@@ -22,4 +22,26 @@ public class Bedsheet {
         System.out.println("BedsheetHashCode"+super.hashCode());
         return 122;
     }
+
+
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Bedsheet){
+                System.out.println("have ref.will compare..");
+                Bedsheet bedsheet1=this;
+                Bedsheet bedsheet2=(Bedsheet) obj;
+                if(bedsheet1.color.equals(bedsheet2)){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

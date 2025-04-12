@@ -25,4 +25,28 @@ public class Dress {
         System.out.println("DressHashCode:"+super.hashCode());
         return 451;
     }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Dress){
+                System.out.println("have ref.will compare..");
+                Dress dress1=this;
+                Dress dress2=(Dress) obj;
+                if(dress1.color.equals(dress2.color) && dress1.type.equals(dress2.type)){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

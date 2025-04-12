@@ -22,4 +22,32 @@ public class Appliance {
         System.out.println("ApplHashCode:"+super.hashCode());
         return 741;
     }
+
+    public void setCost(int cost) {
+        this.cost = cost;
+    }
+
+    public void setCostly(boolean costly) {
+        this.costly = costly;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Appliance){
+                System.out.println("have ref.will compare..");
+                Appliance appliance1=this;
+                Appliance appliance2=(Appliance) obj;
+                if(appliance1.costly==appliance2.costly){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

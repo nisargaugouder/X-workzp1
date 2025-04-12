@@ -7,6 +7,12 @@ public class WineRunner {
         Wine wine = new Wine("Sula", "Red", 1200);
         System.out.println(wine);
         System.out.println(wine.hashCode());
-        System.out.println("Original HashCode:"+System.identityHashCode(wine));
+        System.out.println("Original HashCode:" + System.identityHashCode(wine));
+
+        Wine wine1 = new Wine("Sula", "Red", 1200);
+        Wine wine2 = new Wine("Sula", "Red", 1200);
+
+        boolean same = wine1.equals(wine2);
+        System.out.println("same: " + same);
     }
 }

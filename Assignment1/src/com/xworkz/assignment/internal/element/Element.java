@@ -20,9 +20,32 @@ public class Element {
                 '}';
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAtomicNumber(int atomicNumber) {
+        this.atomicNumber = atomicNumber;
+    }
+
     @Override
     public int hashCode() {
         System.out.println("ElementHashCode:"+super.hashCode());
         return 320;
+    }
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("ref is not null");
+            if(obj instanceof Element){
+                System.out.println("have ref.will compare..");
+                Element element1=this;
+                Element element2=(Element) obj;
+                if(element1.atomicNumber==element2.atomicNumber && element1.name.equals(element2.name)){
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

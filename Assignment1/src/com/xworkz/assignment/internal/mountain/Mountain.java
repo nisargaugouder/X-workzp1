@@ -21,4 +21,20 @@ public class Mountain {
         System.out.println("MountainHashCode:"+super.hashCode());
         return 72;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("obj is null");
+            if(obj instanceof Mountain){
+                System.out.println("obj instance of class");
+                Mountain mountain1=this;
+                Mountain mountain2=(Mountain) obj;
+                if(mountain1.height==mountain2.height && mountain1.name.equals(mountain2.name) && mountain1.location.equals(mountain2.location)){
+                    System.out.println("both are same:");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

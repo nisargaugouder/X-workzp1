@@ -25,4 +25,20 @@ public class VSCode {
         System.out.println("VSCodeHashCode:"+super.hashCode());
         return 5643;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("obj is null");
+            if(obj instanceof VSCode){
+                System.out.println("obj instance of class");
+                VSCode vsCode1=this;
+                VSCode vsCode2=(VSCode) obj;
+                if(vsCode1.language.equals(vsCode2.language) && vsCode1.size==vsCode2.size && vsCode1.version.equals(vsCode2.version)){
+                    System.out.println("both are same:");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -21,4 +21,20 @@ public class Netflix {
         System.out.println("NetflixHashCode:"+super.hashCode());
         return 0;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null){
+            System.out.println("obj is null");
+            if(obj instanceof Netflix){
+                System.out.println("obj instance of class");
+                Netflix netflix1=this;
+                Netflix netflix2=(Netflix) obj;
+                if(netflix2.plan.equals(netflix1.plan) && netflix1.price==netflix2.price && netflix1.screens==netflix2.screens){
+                    System.out.println("both are same:");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
