@@ -7,5 +7,6 @@ public interface AC {
 
     default void costly(){
         System.out.println("AC is costly");
+
     }
 }
