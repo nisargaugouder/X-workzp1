@@ -67,6 +67,8 @@ public class RamServlet extends GenericServlet {
         System.out.println("Name: "+name5+", Cost: "+cost5+", Type: "+type5+", SoilType: "+soilType5);
 
 
+
+
         servletResponse.setContentType("text/html");
         PrintWriter writer=servletResponse.getWriter();
         writer.println("<html>");
