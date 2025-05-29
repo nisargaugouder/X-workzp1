@@ -186,6 +186,7 @@ public class AddStudent extends JFrame implements ActionListener {
             }
 
 
+
             // 2. Phone number validation
             if (!phone.matches("\\d{10}")) {
                 JOptionPane.showMessageDialog(null, "Phone number must be 10 digits");
