@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+     <div class="container-fluid">
+       <a class="navbar-brand" href="#">Navbar</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav">
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="JobApplication.jsp">Home</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="JobApplicationRes.jsp">Result</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="JobSearchId.jsp">SearchById</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+
+   <form action="job" method="post">
+   <br><br>
+       <label for="name">Full Name:</label>
+       <input type="text" id="name" name="fullName" required><br><br>
+
+       <label for="email">Email:</label>
+       <input type="email" id="email" name="email" required><br><br>
+
+       <label for="phone">Phone Number:</label>
+       <input type="number" id="phone" name="phone" required><br><br>
+
+       <label for="qualification">Qualification:</label>
+       <input type="text" id="qualification" name="qualification" required><br><br>
+
+       <input type="submit" value="Apply">
+     </form>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
